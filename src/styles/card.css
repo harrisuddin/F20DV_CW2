@@ -1,0 +1,14 @@
+.card {
+  --card-border: theme(borderWidth.DEFAULT) solid theme(colors.neutral.900);
+  @apply bg-orange-50/25 shadow-md;
+  border: var(--card-border);
+}
+
+.card-top-section {
+  padding: theme(spacing.2);
+}
+
+.card-bottom-section {
+  border-top: var(--card-border);
+  padding: theme(spacing.2);
+}
