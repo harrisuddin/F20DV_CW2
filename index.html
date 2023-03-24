@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/index.css" />
-    <title>F20DV CW2</title>
+    <title>F20DV CW2 - Paul Pogba: Strengths & Weaknesses</title>
   </head>
-  <body class="max-w-full min-h-screen bg-orange-100 text-neutral-900">
+  <body class="max-w-full bg-orange-100 text-neutral-900">
     <div id="loading-icon" class="flex min-h-screen">
       <div class="flex flex-1 items-center justify-center">
         <svg
@@ -55,7 +55,20 @@
       id="default-content"
       class="container m-auto hidden min-h-screen px-2.5 lg:max-w-5xl"
     >
-      test
+      <div class="">
+        <h1 class="text-center">Paul Pogba: Strengths & Weaknesses</h1>
+      </div>
+
+      <div class="">
+        <div class="card">
+          <div class="card-top-section">
+            <div id="pitch-container"></div>
+          </div>
+          <div class="card-bottom-section">
+            <input type="range" min="1" max="38" />
+          </div>
+        </div>
+      </div>
     </div>
     <footer id="footer" class="hidden bg-slate-800 text-neutral-100">
       <div class="container m-auto px-2.5 lg:max-w-5xl">
@@ -64,5 +77,5 @@
     </footer>
   </body>
   <script type="module" src="/src/main.js"></script>
-  <script type="module" src="/src/loadData.js"></script>
+  <script type="module" src="/src/loadData.js" defer></script>
 </html>
