@@ -3,3 +3,19 @@
   height: auto;
   margin: auto;
 }
+
+.pitch-chart .pass,
+.pitch-chart .shot,
+.pitch-chart .legend-circle,
+.pitch-chart .legend-text {
+  transition: opacity 1s ease-out;
+}
+
+.pitch-chart .legend-text,
+.pitch-chart .chart-label {
+  @apply text-[11px] md:text-xs lg:text-sm;
+}
+
+.pitch-chart .chart-label {
+  alignment-baseline: before-edge;
+}

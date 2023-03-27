@@ -11,7 +11,25 @@ async function loadEPLPlayerData() {
 }
 
 /**
- *
+ * @returns {Promise<{
+ * eventId: number;
+ * subEventName: string;
+ * tags: {
+ * id: number;
+ * }[];
+ * playerId: number;
+ * positions: {
+ * y: number;
+ * x: number;
+ * }[];
+ * matchId: number;
+ * eventName: string;
+ * teamId: number;
+ * matchPeriod: string;
+ * eventSec: number;
+ * subEventId: number;
+ * id: number;
+ * }[]>}
  */
 async function loadWyscoutEventsData() {
   return d3.json(wyscoutEventsData);
