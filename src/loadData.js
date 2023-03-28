@@ -66,7 +66,7 @@ function showErrorMessage() {
   document.getElementById("error-message").classList.remove("hidden");
 }
 
-export let eplPlayerDispatch = d3.dispatch("eplPlayerDataLoaded");
+export let dataLoadedDispatch = d3.dispatch("dataLoaded");
 
 /**
  * Stores the EPL player data. Should be accessed after the data has loaded in.
@@ -77,26 +77,26 @@ export let EPL_PLAYER_DATA;
 /**
  * @type {Awaited<ReturnType<typeof loadWyscoutEventsData>>}
  */
-export let EPL_EVENTS_DATA;
+export let WYSCOUT_EVENTS_DATA;
 
 Promise.all([
   loadEPLPlayerData(),
   loadWyscoutEventsData(),
-  loadWyscoutMatchesData(),
+  // loadWyscoutMatchesData(),
 ])
   .then((data) => {
     EPL_PLAYER_DATA = data[0];
-    EPL_EVENTS_DATA = data[1];
+    WYSCOUT_EVENTS_DATA = data[1];
 
-    console.log(
-      data[2].filter((elem) => elem.label.includes("Manchester United"))
-    );
+    // console.log(
+    //   data[2].filter((elem) => elem.label.includes("Manchester United"))
+    // );
 
     // let matchesExtent = d3.extent(data[2], (elem) => new Date(elem.dateutc));
     // console.log(matchesExtent);
 
     // calls the event specified in main.js
-    eplPlayerDispatch.call("eplPlayerDataLoaded");
+    dataLoadedDispatch.call("dataLoaded");
 
     showContent();
   })

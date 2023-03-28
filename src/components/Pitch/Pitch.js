@@ -1,5 +1,4 @@
 import * as d3 from "d3";
-import { EPL_EVENTS_DATA } from "../../loadData";
 import {
   WYSCOUT_EVENT_PASS,
   WYSCOUT_EVENT_PASS_HIGH_PASS,
@@ -141,8 +140,7 @@ export default class Pitch {
    * If any of the elements already are in the DOM then leave them there. ie will not append multiple of the same elements.
    */
   initialiseSVGElements() {
-    const { elementToInsertInto, svgElementClass, id, showShots, showPasses } =
-      this.params;
+    const { elementToInsertInto, svgElementClass, id } = this.params;
 
     // if the svg doesn't exist then insert into dom
     if (d3.select(`#${id}`).empty()) {
