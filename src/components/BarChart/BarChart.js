@@ -28,17 +28,45 @@ export default class BarChart {
      */
     height: 432,
 
-    marginTop: 20, // the top margin, in pixels
-    marginRight: 0, // the right margin, in pixels
-    marginBottom: 30, // the bottom margin, in pixels
-    marginLeft: 40, // the left margin, in pixels
+    /**
+     * The top margin, in pixels
+     */
+    marginTop: 20,
+
+    /**
+     * The right margin, in pixels
+     */
+    marginRight: 0,
+
+    /**
+     * The bottom margin, in pixels
+     */
+    marginBottom: 30,
+
+    /**
+     * The left margin, in pixels
+     */
+    marginLeft: 40,
 
     /**
      * Function that maps the data to the values for the x-axis.
      */
     xMap: (d) => d.name,
 
-    xPadding: 0.1, // amount of x-range to reserve to separate bars
+    /**
+     * Amount of x range to separate bars.
+     */
+    xPadding: 0.1,
+
+    /**
+     * The number of bars to display.
+     */
+    numberOfBars: 5,
+
+    /**
+     * The name of the selected player. Will be displayed in every chart no matter how large/little their y-axis value.
+     */
+    selectedPlayerName: "Paul Pogba",
 
     /**
      * Function that maps the data to the values for the y-axis.
@@ -60,6 +88,16 @@ export default class BarChart {
      * The y-axis label.
      */
     yLabel: "Through Balls / Match",
+
+    /**
+     * The fill colour for the bars.
+     */
+    barFill: d3.schemeTableau10[0],
+
+    /**
+     * The fill colour for the selected player bar.
+     */
+    selectedPlayerBarFill: d3.schemeTableau10[1],
   };
 
   /**
@@ -130,108 +168,198 @@ export default class BarChart {
       .attr("class", svgElementClass);
   }
 
-  draw() {
-    const {
-      xMap,
-      yMap,
-      xPadding,
-      xDefined,
-      yDefined,
-      width,
-      height,
-      marginLeft,
-      marginRight,
-      marginBottom,
-      marginTop,
-      yLabel,
-    } = this.params;
+  /**
+   * Set `this.filteredData` equal to `this.data` filtered where `xMap` and `yMap` are valid.
+   */
+  setFilteredData() {
+    const { xMap, yMap, xDefined, yDefined } = this.params;
 
-    // initialise all non-dynamic dom elements
-    this.initialiseSVGElements();
-
-    // set the base svg attributes
-    this.setSVGAttributes();
-
-    const filteredData = d3.filter(
+    this.filteredData = d3.filter(
       this.data,
       (row) => xDefined(xMap(row)) && yDefined(yMap(row))
     );
-    console.log(filteredData.find((row) => row.name.includes("Pogba")));
-    const X = d3.map(filteredData, xMap);
-    const Y = d3.map(filteredData, yMap);
+  }
 
+  /**
+   * Set `this.xValues` and `this.yValues which maps `this.filteredData` using their mapping functions.
+   */
+  setXAndYValues() {
+    const { xMap, yMap } = this.params;
+
+    this.xValues = d3.map(this.filteredData, xMap);
+    this.yValues = d3.map(this.filteredData, yMap);
+  }
+
+  /**
+   * Set `this.xDomain` to a set with the top `numberOfBars` player names including the `selectedPlayerName`.
+   */
+  setXDomain() {
+    const { xMap, yMap, numberOfBars, selectedPlayerName } = this.params;
+
+    // group sort will first sort by yMap in descending order
+    // then will map the results using xMap
+    // returns list of length `numberOfBars - 1`
     const topPlayers = d3
-      .groupSort(filteredData, ([row]) => -yMap(row), xMap)
-      .slice(0, 8);
+      .groupSort(this.filteredData, ([row]) => -yMap(row), xMap)
+      .slice(0, numberOfBars);
 
-    const topPlayersHasPogba = topPlayers.some((player) =>
-      player.includes("Pogba")
+    // check the top players contains the selected player name
+    const topPlayersHasSelectedPlayer = topPlayers.some(
+      (player) => player === selectedPlayerName
     );
-    if (!topPlayersHasPogba) {
-      topPlayers.push("Paul Pogba");
+
+    // if not then add the player to the list
+    if (!topPlayersHasSelectedPlayer) {
+      topPlayers.push(selectedPlayerName);
     }
 
-    const xDomain = new d3.InternSet(topPlayers);
+    this.xDomain = new d3.InternSet(topPlayers);
+  }
+
+  /**
+   * Set `this.xScale` which is used for the x-axis.
+   */
+  setXScale() {
+    const { marginLeft, width, marginRight, xPadding } = this.params;
+
     const xRange = [marginLeft, width - marginRight];
-    const xScale = d3.scaleBand(xDomain, xRange).padding(xPadding);
+    this.xScale = d3.scaleBand(this.xDomain, xRange).padding(xPadding);
+  }
 
-    const yDomain = [0, d3.max(Y)];
+  /**
+   * Set `this.yScale`
+   */
+  setYScale() {
+    const { height, marginBottom, marginTop } = this.params;
+
+    const yDomain = [0, d3.max(this.yValues)];
     const yRange = [height - marginBottom, marginTop];
-    const yScale = d3.scaleLinear(yDomain, yRange);
+    this.yScale = d3.scaleLinear(yDomain, yRange);
+  }
 
-    // Omit any data not present in the x-domain.
-    const I = d3.range(X.length).filter((i) => xDomain.has(X[i]));
+  /**
+   * Set `this.selectedIndexes` which are the indexes of the players to display.
+   */
+  setSelectedIndexes() {
+    this.selectedIndexes = d3
+      .range(this.xValues.length)
+      .filter((i) => this.xDomain.has(this.xValues[i]));
+  }
 
-    const xAxis = d3.axisBottom(xScale).tickSizeOuter(0);
-    const yAxis = d3.axisLeft(yScale).ticks(height / 40);
+  /**
+   * Set `this.xAxis`.
+   */
+  setXAxis() {
+    this.xAxis = d3.axisBottom(this.xScale).tickSizeOuter(0);
+  }
 
-    // const formatValue = yScale.tickFormat(100, yFormat);
-    const title = (i) => `${X[i]}\n${Y[i]}`;
+  /**
+   * Set `this.yAxis`.
+   */
+  setYAxis() {
+    const { height } = this.params;
 
-    console.log(X, Y, I);
+    this.yAxis = d3.axisLeft(this.yScale).ticks(height / 40);
+  }
+
+  /**
+   * Set/draw the x-axis shown in the svg element.
+   */
+  setSVGXAxis() {
+    const { height, marginBottom } = this.params;
+
+    this.svg
+      .select(".x-axis")
+      .attr("transform", `translate(0,${height - marginBottom})`)
+      .call(this.xAxis);
+  }
+
+  /**
+   * Set/draw the x-axis shown in the svg element.
+   */
+  setSVGYAxis() {
+    const { marginLeft, width, marginRight, yLabel } = this.params;
 
     this.svg
       .select(".y-axis")
       .transition()
       .duration(1000)
       .attr("transform", `translate(${marginLeft},0)`)
-      .call(yAxis)
-      // .call((g) => g.select(".domain").remove())
+      .call(this.yAxis)
       .call((g) =>
         g
           .selectAll(".tick line")
-          // .clone()
           .transition()
           .duration(1000)
           .attr("x2", width - marginLeft - marginRight)
-          .attr("stroke-opacity", 0.1)
-      )
-      .call((g) =>
-        g
-          .select(".y-axis-label")
-          .attr("x", -marginLeft)
-          .attr("y", 10)
-          .attr("fill", "currentColor")
-          .attr("text-anchor", "start")
-          .text(yLabel)
       );
+
+    this.svg
+      .select(".y-axis-label")
+      .transition()
+      .duration(1000)
+      .attr("x", -marginLeft)
+      .attr("y", 10)
+      .text(yLabel);
+  }
+
+  /**
+   * Set/draw the rect bars.
+   */
+  setSVGRects() {
+    const { selectedPlayerName, barFill, selectedPlayerBarFill } = this.params;
 
     const bars = this.svg
       .select(".bars")
       .selectAll("rect")
-      .data(I)
+      .data(this.selectedIndexes)
       .join("rect")
       .classed("bar", true)
-      .attr("x", (i) => xScale(X[i]))
-      .attr("y", (i) => yScale(Y[i]))
-      .attr("height", (i) => yScale(0) - yScale(Y[i]))
-      .attr("width", xScale.bandwidth());
+      .attr("fill", (i) => {
+        let playerName = this.xValues[i];
+        if (playerName === selectedPlayerName) return selectedPlayerBarFill;
+        return barFill;
+      })
+      .call((barsInCall) => {
+        barsInCall
+          .transition()
+          .duration(1000)
+          .attr("x", (i) => this.xScale(this.xValues[i]))
+          .attr("y", (i) => this.yScale(this.yValues[i]))
+          .attr("height", (i) => this.yScale(0) - this.yScale(this.yValues[i]))
+          .attr("width", this.xScale.bandwidth());
+      });
 
+    const title = (i) => `${this.xValues[i]}\n${this.yValues[i]}`;
     bars.html((i) => `<title>${title(i)}</title>`);
+  }
 
-    this.svg
-      .select(".x-axis")
-      .attr("transform", `translate(0,${height - marginBottom})`)
-      .call(xAxis);
+  draw() {
+    // initialise all non-dynamic dom elements
+    this.initialiseSVGElements();
+
+    // set the base svg attributes
+    this.setSVGAttributes();
+
+    // setup data needed to draw
+    this.setFilteredData();
+    this.setXAndYValues();
+
+    // setup x domain, x and y scales
+    this.setXDomain();
+    this.setXScale();
+    this.setYScale();
+
+    // set the selected player indexes
+    this.setSelectedIndexes();
+
+    // set the x and y axis
+    this.setXAxis();
+    this.setYAxis();
+
+    // draw the x, y axis, and bars
+    this.setSVGXAxis();
+    this.setSVGYAxis();
+    this.setSVGRects();
   }
 }

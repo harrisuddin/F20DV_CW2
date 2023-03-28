@@ -3,3 +3,16 @@
   height: auto;
   margin: auto;
 }
+
+.bar-chart g {
+  @apply text-[11px] md:text-xs lg:text-sm;
+}
+
+.bar-chart .y-axis .tick line {
+  stroke-opacity: theme(opacity.10);
+}
+
+.bar-chart .y-axis-label {
+  fill: theme(fill.current);
+  text-anchor: start;
+}
