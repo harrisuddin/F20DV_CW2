@@ -7,15 +7,22 @@
 .pitch-chart .pass,
 .pitch-chart .shot,
 .pitch-chart .legend-circle,
-.pitch-chart .legend-text {
+.pitch-chart .legend-text,
+.pitch-chart .cluster-pass {
   transition: opacity 1s ease-out;
 }
 
 .pitch-chart .legend-text,
+.pitch-chart .cluster-legend-text,
 .pitch-chart .chart-label {
   @apply text-[11px] md:text-xs lg:text-sm;
 }
 
 .pitch-chart .chart-label {
   alignment-baseline: before-edge;
+}
+
+.pitch-chart .cluster-center,
+.pitch-chart .cluster-legend-circle {
+  stroke: theme(colors.neutral.900);
 }

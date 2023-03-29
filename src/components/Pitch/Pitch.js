@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import sampleSize from "lodash.samplesize";
 import {
   WYSCOUT_EVENT_PASS,
   WYSCOUT_EVENT_PASS_HIGH_PASS,
@@ -36,6 +37,32 @@ export default class Pitch {
     height: 432,
 
     /**
+     * The margin left to give the legend.
+     */
+    legendMarginLeft: 2.5,
+
+    /**
+     * The margin top to give the legend.
+     */
+    legendMarginTop: 25,
+
+    /**
+     * The height of the legend.
+     */
+    legendHeight: 25,
+
+    /**
+     * The label of the chart.
+     */
+    chartLabel:
+      "2017/18 Pass Clusters (TP = Total Passes) (50% of passes shown)",
+
+    /**
+     * The margin left of the chart label.
+     */
+    chartLabelMarginLeft: 2.5,
+
+    /**
      * True when showing shots visualisation.
      */
     showShots: false,
@@ -70,7 +97,7 @@ export default class Pitch {
     /**
      * True when showing pass visualisation.
      */
-    showPasses: true,
+    showPasses: false,
 
     /**
      * Similar to selectedShots.
@@ -93,29 +120,73 @@ export default class Pitch {
     ],
 
     /**
-     * The margin left to give the legend.
+     * True when showing passes cluster visualisation.
      */
-    legendMarginLeft: 2.5,
+    showPassClusters: true,
 
     /**
-     * The margin top to give the legend.
+     * The initial position of each centroid.
      */
-    legendMarginTop: 25,
+    initialCentroids: [
+      {
+        id: 0,
+        x: 25,
+        y: 20,
+      },
+      {
+        id: 1,
+        x: 25,
+        y: 80,
+      },
+      {
+        id: 2,
+        x: 50,
+        y: 50,
+      },
+      {
+        id: 3,
+        x: 75,
+        y: 20,
+      },
+      {
+        id: 4,
+        x: 75,
+        y: 80,
+      },
+    ],
 
     /**
-     * The height of the legend.
+     * True if you want to use the initial centroids array or will randomly generate them.
      */
-    legendHeight: 25,
+    useInitialCentroids: false,
 
     /**
-     * The label of the chart.
+     * Used if useInitialCentroids is false
      */
-    chartLabel: "Paul Pogba 2017/18 Assist/Key Pass Map",
+    numberOfCentroids: 10,
 
     /**
-     * The margin left of the chart label.
+     * The color scale used for the cluster vis.
      */
-    chartLabelMarginLeft: 2.5,
+    clusterColorScale: d3.schemePaired,
+
+    // [
+    //   "#171717",
+    //   "#7f1d1d",
+    //   "#ea580c",
+    //   "#65a30d",
+    //   "#14532d",
+    //   "#0d9488",
+    //   "#164e63",
+    //   "#7c3aed",
+    //   "#581c87",
+    //   "#db2777",
+    // ],
+
+    /**
+     * A number between 0-1. Determines the % of passes to display for the cluster vis.
+     */
+    passClusterSamplePercent: 1,
   };
 
   /**
@@ -125,6 +196,7 @@ export default class Pitch {
   constructor(data, params) {
     this.data = data;
     this.params = { ...this.defaultParams, ...params };
+    this.setupClustering();
   }
 
   /**
@@ -158,7 +230,7 @@ export default class Pitch {
       this.svg.append("marker").attr("id", "pass-marker");
     }
 
-    // check the shots legend doesn't exist and if so then add to dom
+    // check the legend doesn't exist and if so then add to dom
     if (this.svg.select(".legend").empty()) {
       this.svg.append("g").classed("legend", true);
     }
@@ -166,6 +238,11 @@ export default class Pitch {
     // same for chart label
     if (this.svg.select(".chart-label").empty()) {
       this.svg.append("text").classed("chart-label", true);
+    }
+
+    // same for cluster legend
+    if (this.svg.select(".cluster-legend").empty()) {
+      this.svg.append("g").classed("cluster-legend", true);
     }
   }
 
@@ -458,8 +535,6 @@ export default class Pitch {
    * Filter the data to only show shot events and draw those on the pitch. Display the shots with different colors as specified by `selectedShots`
    */
   drawShots() {
-    const { selectedShots } = this.params;
-
     // filter the data so only shot events are shown
     const shotData = this.data.filter(
       (event) => event.eventId === WYSCOUT_EVENT_SHOT
@@ -505,7 +580,7 @@ export default class Pitch {
   drawPasses() {
     const { selectedPasses } = this.params;
 
-    const passData = this.data.filter((event) => {
+    const selectedPassEvents = this.data.filter((event) => {
       return event.tags.some((tag) =>
         selectedPasses.some((selectedTag) => selectedTag.tag.id === tag.id)
       );
@@ -517,7 +592,7 @@ export default class Pitch {
 
     this.svg
       .selectAll(".pass")
-      .data(passData)
+      .data(selectedPassEvents)
       .join("line")
       .on("mouseover", (_, d) => {
         let legend = this.getLegendForEvent(d);
@@ -543,6 +618,370 @@ export default class Pitch {
       .attr("stroke", (d) => this.getLegendForEvent(d).stroke)
       .attr("stroke-width", 2)
       .attr("marker-end", "url(#pass-marker)");
+  }
+
+  /**
+   * Remove all cluster elements and the cluster legend.
+   */
+  removeClusterElements() {
+    this.svg
+      .selectAll(".cluster")
+      .transition()
+      .duration(1000)
+      .style("opacity", 0)
+      .remove();
+    this.svg
+      .select(".cluster-legend")
+      .transition()
+      .duration(1000)
+      .style("opacity", 0)
+      .remove();
+  }
+
+  /**
+   * Runs the k means clustering algorithm for this specific case.
+   */
+  kMeansClustering() {
+    const { numberOfCentroids, useInitialCentroids, initialCentroids } =
+      this.params;
+
+    const points = this.mappedPassEvents;
+
+    let centroids;
+    let k;
+
+    // if using initial centroids then just use them
+    if (useInitialCentroids) {
+      centroids = initialCentroids;
+      k = centroids.length;
+    } else {
+      // otherwise randomly generate the centroids
+      centroids = [];
+      k = numberOfCentroids;
+      for (let i = 0; i < k; i++) {
+        let x = 0;
+        let y = 0;
+        // stops x and/or y becoming 0
+        while (x === 0 || y === 0) {
+          x = Math.random();
+          y = Math.random();
+        }
+        centroids.push({ x, y, id: i });
+      }
+    }
+
+    /**
+     * euclidean distance formula = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+     */
+    const euclideanDistance = (point, centroid) => {
+      return Math.sqrt(
+        (point.x - centroid.x) ** 2 + (point.y - centroid.y) ** 2
+      );
+    };
+
+    /**
+     * Returns the points new closest clusters id.
+     */
+    const getPointsClosestCentroid = (
+      point,
+      closestCentroidID,
+      closestDistance
+    ) => {
+      for (let i = 0; i < k; i++) {
+        const centroid = centroids[i];
+        const distance = euclideanDistance(point, centroid);
+
+        if (distance < closestDistance) {
+          closestCentroidID = centroid.id;
+          closestDistance = distance;
+        }
+      }
+
+      return closestCentroidID;
+    };
+
+    // Assign each point to the closest centroid
+    for (const point of points) {
+      let closestCentroidID = 0;
+      let closestDistance = Infinity;
+
+      closestCentroidID = getPointsClosestCentroid(
+        point,
+        closestCentroidID,
+        closestDistance
+      );
+
+      point.cluster = closestCentroidID;
+    }
+
+    /**
+     * Move each centroid to the center of its cluster
+     */
+    const moveCentroidsToClusterCenter = () => {
+      for (let i = 0; i < k; i++) {
+        const centroid = centroids[i];
+        let clusterSize = 0;
+        let totalX = 0;
+        let totalY = 0;
+        for (const point of points) {
+          if (point.cluster === i) {
+            clusterSize++;
+            totalX += point.x;
+            totalY += point.y;
+          }
+        }
+        if (clusterSize > 0) {
+          centroid.x = totalX / clusterSize;
+          centroid.y = totalY / clusterSize;
+        }
+      }
+    };
+
+    moveCentroidsToClusterCenter();
+
+    // Repeat previous 2 blocks until convergence
+    let iterations = 1;
+    let maxIterations = 100;
+    while (iterations <= maxIterations) {
+      let clustersChanged = false;
+      // Assign each point to the closest centroid
+      for (const point of points) {
+        let closestCentroidID = point.cluster;
+        let closestDistance = euclideanDistance(
+          point,
+          centroids.find((centroid) => centroid.id === closestCentroidID)
+        );
+
+        closestCentroidID = getPointsClosestCentroid(
+          point,
+          closestCentroidID,
+          closestDistance
+        );
+
+        if (closestCentroidID !== point.cluster) {
+          point.cluster = closestCentroidID;
+          clustersChanged = true;
+        }
+      }
+      if (!clustersChanged) {
+        // Convergence achieved
+        break;
+      }
+      moveCentroidsToClusterCenter();
+      iterations++;
+    }
+
+    return { points, centroids };
+  }
+
+  /**
+   * Setup the class fields needed for the clustering. Calls the k means clustering method.
+   * Ideally this method will not be called in draw for performance reasons.
+   */
+  setupClustering() {
+    const { passClusterSamplePercent } = this.params;
+
+    // get all pass events
+    const allPassEvents = this.data.filter(
+      (event) => event.eventId === WYSCOUT_EVENT_PASS
+    );
+
+    this.passEventsForClustering = sampleSize(
+      allPassEvents,
+      allPassEvents.length * passClusterSamplePercent
+    );
+
+    this.mappedPassEvents = this.passEventsForClustering.map((event, index) => {
+      return {
+        /**
+         * The id of the cluster the point is assigned to.
+         */
+        cluster: 0,
+
+        /**
+         * The event starting x position.
+         */
+        x: event.positions[0].x,
+
+        /**
+         * The event starting y position.
+         */
+        y: event.positions[0].y,
+
+        /**
+         * The event ending x position.
+         */
+        x2: event.positions[1].x,
+
+        /**
+         * The event ending x position.
+         */
+        y2: event.positions[1].y,
+
+        /**
+         * The index of the event in the original array
+         */
+        eventIndex: index,
+      };
+    });
+
+    let { points, centroids } = this.kMeansClustering();
+
+    this.clusteredPassEvents = points;
+
+    // sort the centroids by x pos from lowest to highest
+    // so its easy to see how the player moves from the start to the end of the pitch
+    this.centroids = centroids.sort(
+      (centroidA, centroidB) => centroidA.x - centroidB.x
+    );
+  }
+
+  /**
+   * Called when the cluster center or cluster pass is hovered. Will increase the opacity of the selected cluster.
+   */
+  onClusterCenterMouseover(_, clusterId) {
+    this.svg
+      .selectAll(`.cluster-pass.cluster-${clusterId}`)
+      .classed("opacity-20", false);
+    this.svg
+      .selectAll(`.cluster-pass.cluster-${clusterId}`)
+      .classed("opacity-100", true);
+  }
+
+  /**
+   * Called when the cluster center or cluster pass is stopped hovered. Will normalise the opacity of all cluster passes.
+   */
+  onClusterCenterMouseout = (_, clusterId) => {
+    this.svg
+      .selectAll(`.cluster-pass.cluster-${clusterId}`)
+      .classed("opacity-20", true);
+    this.svg
+      .selectAll(`.cluster-pass.cluster-${clusterId}`)
+      .classed("opacity-100", false);
+  };
+
+  /**
+   * Draws the passes for the cluster vis.
+   */
+  drawPassClusters() {
+    const { clusterColorScale } = this.params;
+
+    this.svg
+      .selectAll(".cluster-pass")
+      .data(this.clusteredPassEvents)
+      .join("line")
+      .on("click", (_, d) =>
+        console.log(this.passEventsForClustering[d.eventIndex])
+      )
+      .attr(
+        "class",
+        (d) => `cluster cluster-pass cluster-${d.cluster} opacity-20`
+      )
+      .on("mouseover", (_, d) => this.onClusterCenterMouseover(_, d.cluster))
+      .on("mouseout", (_, d) => this.onClusterCenterMouseout(_, d.cluster))
+      .transition()
+      .duration(1000)
+      .attr("x1", (d) => this.pitchXScale(d.x))
+      .attr("y1", (d) => this.pitchYScale(100 - d.y))
+      .attr("x2", (d) => this.pitchXScale(d.x2))
+      .attr("y2", (d) => this.pitchYScale(100 - d.y2))
+      .attr("stroke", (d) => clusterColorScale[d.cluster])
+      .attr("stroke-width", 2)
+      .attr("marker-end", "url(#pass-marker)");
+
+    this.svg
+      .selectAll(".cluster-center")
+      .data(this.centroids, (d) => d.id)
+      .join("circle")
+      .on("mouseover", (_, d) => this.onClusterCenterMouseover(_, d.id))
+      .on("mouseout", (_, d) => this.onClusterCenterMouseout(_, d.id))
+      .attr("class", (d, i) => `cluster cluster-center cluster-${d.id}`)
+      .transition()
+      .duration(1000)
+      .attr("cx", (d) => this.pitchXScale(d.x))
+      .attr("cy", (d) => this.pitchYScale(100 - d.y))
+      .attr("fill", (d, i) => clusterColorScale[d.id])
+      .attr("r", 8);
+  }
+
+  /**
+   * Returns an object where the key is the centroid id and the value is the number of pass events for that centroid.
+   */
+  getClusterCounts() {
+    const clusterCounts = {};
+
+    // add all the keys (centroid ids) to the object
+    this.centroids.forEach((centroid) => (clusterCounts[centroid.id] = 0));
+
+    // loop for each pass event and increment the counter
+    this.clusteredPassEvents.forEach((point) => clusterCounts[point.cluster]++);
+
+    return clusterCounts;
+  }
+
+  /**
+   * Draw the legend of the cluster vis.
+   */
+  drawClusterLegend() {
+    const {
+      legendMarginLeft,
+      legendMarginTop,
+      legendHeight,
+      clusterColorScale,
+    } = this.params;
+
+    let circleCircumference = 20;
+    let circleR = circleCircumference / 2;
+    let spaceBetween = 10;
+    let wordWidth = 45;
+    let distanceToNextCircle =
+      circleR + spaceBetween + wordWidth + spaceBetween + circleR;
+
+    let clusterCounts = this.getClusterCounts();
+
+    const legend = this.svg
+      .select(".cluster-legend")
+      .attr("transform", `translate(${legendMarginLeft}, ${legendMarginTop})`);
+
+    legend
+      .selectAll(".cluster-legend-circle")
+      .data(this.centroids)
+      .join("circle")
+      .on("mouseover", (_, d) => this.onClusterCenterMouseover(_, d.id))
+      .on("mouseout", (_, d) => this.onClusterCenterMouseout(_, d.id))
+      .attr("class", (d) => `cluster-legend-circle z-10 cluster-${d.id}`)
+      .transition()
+      .duration(1000)
+      .attr("cy", legendHeight / 2)
+      .attr("cx", (d, i) => circleR + i * distanceToNextCircle)
+      .attr("r", circleR)
+      .attr("fill", (d) => clusterColorScale[d.id]);
+
+    legend
+      .selectAll(".cluster-legend-text")
+      .data(this.centroids)
+      .join("text")
+      .attr("class", (d) => `cluster-legend-text z-10 cluster-${d.id}`)
+      .transition()
+      .duration(1000)
+      .text((d) => clusterCounts[d.id] + "TP")
+      .attr("y", legendHeight / 2 + circleR / 2)
+      .attr(
+        "x",
+        (d, i) => circleCircumference + spaceBetween + i * distanceToNextCircle
+      );
+  }
+
+  /**
+   * Remove the legend from the DOM.
+   */
+  removeLegend() {
+    this.svg
+      .select(".legend")
+      .transition()
+      .duration(1000)
+      .style("opacity", 0)
+      .remove();
   }
 
   /**
@@ -597,7 +1036,7 @@ export default class Pitch {
   }
 
   draw() {
-    const { showShots, showPasses } = this.params;
+    const { showShots, showPasses, showPassClusters } = this.params;
 
     // initialise all non-dynamic dom elements
     this.initialiseSVGElements();
@@ -619,6 +1058,7 @@ export default class Pitch {
     if (showShots) {
       this.removePassElements();
       this.drawShots();
+      this.drawLegend();
     }
 
     // draw passes
@@ -626,9 +1066,22 @@ export default class Pitch {
       this.removeShotsElements();
       this.setPassMarkerAttributes();
       this.drawPasses();
+      this.drawLegend();
     }
 
-    // draw legend
-    this.drawLegend();
+    // draw passes clustering
+    if (showPassClusters) {
+      // remove other vis elements
+      this.removePassElements();
+      this.removeLegend();
+      this.removeShotsElements();
+
+      // draw cluster vis
+      this.setPassMarkerAttributes();
+      this.drawPassClusters();
+      this.drawClusterLegend();
+    } else {
+      this.removeClusterElements();
+    }
   }
 }

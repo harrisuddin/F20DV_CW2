@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/index.css" />
     <title>
-      F20DV CW2 - Paul Pogba At Manchester United: Strengths & Weaknesses
+      F20DV CW2 - Paul Pogba: A Visual Essay Of His Time At Manchester United
     </title>
   </head>
   <body class="max-w-full bg-orange-100 text-neutral-900">
@@ -57,19 +57,54 @@
       id="default-content"
       class="container m-auto hidden min-h-screen px-2.5 lg:max-w-5xl"
     >
-      <div class="">
+      <div>
         <h1 class="text-center">
-          Paul Pogba At Manchester United: Strengths & Weaknesses
+          Paul Pogba: A Visual Essay Of His Time At Manchester United
         </h1>
+        <div>
+          <p>
+            This visual essay will explore the French midfielder Paul Pogba
+            during his time at Manchester United.
+          </p>
+          <p>
+            We will firstly discuss what kind of player he is, what's his
+            position and how does he play. Then we will showcase his strengths
+            and weaknesses. Finally, we will compare him and teammates
+            performances to understand his importance to the team.
+          </p>
+        </div>
       </div>
 
-      <div class="">
+      <div>
+        <h2>What kind of player is Paul Pogba?</h2>
         <div class="card">
           <div class="card-top-section">
             <div id="pitch-container"></div>
           </div>
           <div class="card-bottom-section">
             <div class="button-container">
+              <button id="btn-pitch-chart-pass-clusters" class="button-primary">
+                Show Pass Clusters
+              </button>
+              <div class="flex items-center gap-2">
+                <label for="centroids-size">Number of Centroids (1-10):</label>
+
+                <input
+                  type="number"
+                  id="centroids-size"
+                  name="centroids-size"
+                  class="input-primary"
+                  min="1"
+                  max="10"
+                  value="10"
+                />
+              </div>
+              <button
+                id="btn-pitch-chart-regen-clusters"
+                class="button-primary"
+              >
+                Regenerate Centroids
+              </button>
               <button id="btn-pitch-chart-shot-map" class="button-primary">
                 Show Shot Map
               </button>
@@ -85,7 +120,7 @@
         <p>test</p>
       </div>
 
-      <div class="">
+      <div>
         <div class="card">
           <div class="card-top-section">
             <div id="bar-chart-container"></div>

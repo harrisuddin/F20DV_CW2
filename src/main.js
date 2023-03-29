@@ -62,8 +62,9 @@ d3.select("#test").on("click", () => {
 d3.select("#btn-pitch-chart-shot-map").on("click", () => {
   pitchChart.setParams({
     showPasses: false,
+    showPassClusters: false,
     showShots: true,
-    chartLabel: "Paul Pogba 2017/18 Shot Map",
+    chartLabel: "2017/18 Shot Map",
   });
   pitchChart.draw();
 });
@@ -71,10 +72,43 @@ d3.select("#btn-pitch-chart-shot-map").on("click", () => {
 d3.select("#btn-pitch-chart-assist-keypass-map").on("click", () => {
   pitchChart.setParams({
     showPasses: true,
+    showPassClusters: false,
     showShots: false,
-    chartLabel: "Paul Pogba 2017/18 Assist/Key Pass Map",
+    chartLabel: "2017/18 Assist/Key Pass Map",
   });
   pitchChart.draw();
+});
+
+d3.select("#btn-pitch-chart-pass-clusters").on("click", () => {
+  pitchChart.setParams({
+    showPasses: false,
+    showPassClusters: true,
+    showShots: false,
+    chartLabel:
+      "2017/18 Pass Clusters (TP = Total Passes) (50% of passes shown)",
+  });
+  pitchChart.draw();
+});
+d3.select("#btn-pitch-chart-regen-clusters").on("click", () => {
+  let isShowingClusters = pitchChart.params.showPassClusters;
+
+  if (isShowingClusters) {
+    pitchChart.setupClustering();
+    pitchChart.draw();
+  }
+});
+
+d3.select("#centroids-size").on("change", (event) => {
+  let numberOfCentroids = event.target.value;
+  let isShowingClusters = pitchChart.params.showPassClusters;
+
+  if (isShowingClusters) {
+    pitchChart.setParams({
+      numberOfCentroids,
+    });
+    pitchChart.setupClustering();
+    pitchChart.draw();
+  }
 });
 
 d3.select(window).on("resize", resizeCharts);
