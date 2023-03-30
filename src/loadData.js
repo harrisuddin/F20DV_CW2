@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 import eplPlayerStatsData from "./data/epl-player-stats.csv?url";
-import wyscoutEventsData from "./data/wyscout/events_England.json?url";
+import wyscoutPogbaEventsData from "./data/wyscout/pogba_events_England.json?url";
 import wyscoutMatchesData from "./data/wyscout/matches_England.json?url";
 
 /**
@@ -32,7 +32,7 @@ async function loadEPLPlayerData() {
  * }[]>}
  */
 async function loadWyscoutEventsData() {
-  return d3.json(wyscoutEventsData);
+  return d3.json(wyscoutPogbaEventsData);
 }
 
 /**
@@ -77,7 +77,7 @@ export let EPL_PLAYER_DATA;
 /**
  * @type {Awaited<ReturnType<typeof loadWyscoutEventsData>>}
  */
-export let WYSCOUT_EVENTS_DATA;
+export let WYSCOUT_POGBA_EVENTS_DATA;
 
 Promise.all([
   loadEPLPlayerData(),
@@ -86,14 +86,7 @@ Promise.all([
 ])
   .then((data) => {
     EPL_PLAYER_DATA = data[0];
-    WYSCOUT_EVENTS_DATA = data[1];
-
-    // console.log(
-    //   data[2].filter((elem) => elem.label.includes("Manchester United"))
-    // );
-
-    // let matchesExtent = d3.extent(data[2], (elem) => new Date(elem.dateutc));
-    // console.log(matchesExtent);
+    WYSCOUT_POGBA_EVENTS_DATA = data[1];
 
     // calls the event specified in main.js
     dataLoadedDispatch.call("dataLoaded");

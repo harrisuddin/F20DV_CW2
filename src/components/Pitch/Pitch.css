@@ -26,3 +26,8 @@
 .pitch-chart .cluster-legend-circle {
   stroke: theme(colors.neutral.900);
 }
+
+.pitch-chart .pitch-right-halfspace {
+  fill: theme(colors.neutral.50);
+  fill-opacity: theme(opacity.75);
+}

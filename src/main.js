@@ -4,7 +4,7 @@ import BarChart from "./components/BarChart/BarChart";
 import Pitch from "./components/Pitch/Pitch";
 import {
   dataLoadedDispatch,
-  WYSCOUT_EVENTS_DATA,
+  WYSCOUT_POGBA_EVENTS_DATA,
   EPL_PLAYER_DATA,
 } from "./loadData";
 import { WYSCOUT_ID_PLAYER_POGBA } from "./wyscout";
@@ -22,10 +22,6 @@ let pitchChart = null;
 let barChart = null;
 
 function onDataLoaded() {
-  let pogbaEvents = WYSCOUT_EVENTS_DATA.filter(
-    (event) => event.playerId == WYSCOUT_ID_PLAYER_POGBA
-  );
-
   let over38Appearances = EPL_PLAYER_DATA.filter(
     (row) => row.appearances >= 38
   );
@@ -33,7 +29,7 @@ function onDataLoaded() {
   console.log(over38Appearances);
 
   try {
-    pitchChart = new Pitch(pogbaEvents, {
+    pitchChart = new Pitch(WYSCOUT_POGBA_EVENTS_DATA, {
       elementToInsertInto: "#pitch-container",
       id: "pitch",
     });
@@ -80,12 +76,14 @@ d3.select("#btn-pitch-chart-assist-keypass-map").on("click", () => {
 });
 
 d3.select("#btn-pitch-chart-pass-clusters").on("click", () => {
+  let { passClusterSamplePercent } = pitchChart.params;
   pitchChart.setParams({
     showPasses: false,
     showPassClusters: true,
     showShots: false,
-    chartLabel:
-      "2017/18 Pass Clusters (TP = Total Passes) (50% of passes shown)",
+    chartLabel: `2017/18 Pass Clusters (TP = Total Passes) (${
+      passClusterSamplePercent * 100
+    }% of passes shown)`,
   });
   pitchChart.draw();
 });
@@ -102,11 +100,31 @@ d3.select("#centroids-size").on("change", (event) => {
   let numberOfCentroids = event.target.value;
   let isShowingClusters = pitchChart.params.showPassClusters;
 
+  pitchChart.setParams({
+    numberOfCentroids,
+  });
+  pitchChart.setupClustering();
+
   if (isShowingClusters) {
-    pitchChart.setParams({
-      numberOfCentroids,
-    });
-    pitchChart.setupClustering();
+    pitchChart.draw();
+  }
+});
+
+d3.select("#percent-pass-clusters").on("change", (event) => {
+  let passClusterSamplePercent = event.target.value / 100;
+
+  let isShowingClusters = pitchChart.params.showPassClusters;
+
+  pitchChart.setParams({
+    passClusterSamplePercent,
+    chartLabel: `2017/18 Pass Clusters (TP = Total Passes) (${
+      passClusterSamplePercent * 100
+    }% of passes shown)`,
+  });
+
+  pitchChart.setupClustering();
+
+  if (isShowingClusters) {
     pitchChart.draw();
   }
 });

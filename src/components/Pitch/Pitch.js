@@ -301,6 +301,8 @@ export default class Pitch {
    * If any of the elements already are in the DOM then leave them there. ie will not append multiple of the same elements.
    */
   initialisePitchElements() {
+    const { showPassClusters } = this.params;
+
     // append pitch outline rect if needed
     if (this.svg.select(".pitch-outline").empty()) {
       this.svg.append("rect").classed("pitch-outline", true);
@@ -351,6 +353,10 @@ export default class Pitch {
     // same for right pen spot
     if (this.svg.select(".pen-spot-right").empty()) {
       this.svg.append("circle").classed("pen-spot pen-spot-right", true);
+    }
+
+    if (this.svg.select(".pitch-right-halfspace").empty() && showPassClusters) {
+      this.svg.append("rect").classed("cluster pitch-right-halfspace", true);
     }
   }
 
@@ -451,6 +457,16 @@ export default class Pitch {
       .attr("cx", pitchXScale(100 - 10))
       .attr("cy", pitchYScale(50))
       .attr("r", 5);
+
+    // the right halfspace
+    this.svg
+      .select(".pitch-right-halfspace")
+      .attr("x", this.pitchXScale(16))
+      .attr("y", this.pitchYScale(100 - 60))
+      .attr("height", this.pitchYScale(100 - 20))
+      .attr("width", this.pitchXScale(84 - 16))
+      .attr("fill", "none")
+      .attr("stroke", "black");
   }
 
   /**
@@ -867,6 +883,20 @@ export default class Pitch {
     const { clusterColorScale } = this.params;
 
     this.svg
+      .selectAll(".cluster-center")
+      .data(this.centroids, (d) => d.id)
+      .join("circle")
+      .on("mouseover", (_, d) => this.onClusterCenterMouseover(_, d.id))
+      .on("mouseout", (_, d) => this.onClusterCenterMouseout(_, d.id))
+      .attr("class", (d, i) => `cluster cluster-center cluster-${d.id}`)
+      .transition()
+      .duration(1000)
+      .attr("cx", (d) => this.pitchXScale(d.x))
+      .attr("cy", (d) => this.pitchYScale(100 - d.y))
+      .attr("fill", (d, i) => clusterColorScale[d.id])
+      .attr("r", 8);
+
+    this.svg
       .selectAll(".cluster-pass")
       .data(this.clusteredPassEvents)
       .join("line")
@@ -888,20 +918,6 @@ export default class Pitch {
       .attr("stroke", (d) => clusterColorScale[d.cluster])
       .attr("stroke-width", 2)
       .attr("marker-end", "url(#pass-marker)");
-
-    this.svg
-      .selectAll(".cluster-center")
-      .data(this.centroids, (d) => d.id)
-      .join("circle")
-      .on("mouseover", (_, d) => this.onClusterCenterMouseover(_, d.id))
-      .on("mouseout", (_, d) => this.onClusterCenterMouseout(_, d.id))
-      .attr("class", (d, i) => `cluster cluster-center cluster-${d.id}`)
-      .transition()
-      .duration(1000)
-      .attr("cx", (d) => this.pitchXScale(d.x))
-      .attr("cy", (d) => this.pitchYScale(100 - d.y))
-      .attr("fill", (d, i) => clusterColorScale[d.id])
-      .attr("r", 8);
   }
 
   /**
@@ -949,7 +965,7 @@ export default class Pitch {
       .join("circle")
       .on("mouseover", (_, d) => this.onClusterCenterMouseover(_, d.id))
       .on("mouseout", (_, d) => this.onClusterCenterMouseout(_, d.id))
-      .attr("class", (d) => `cluster-legend-circle z-10 cluster-${d.id}`)
+      .attr("class", (d) => `cluster-legend-circle cluster-${d.id}`)
       .transition()
       .duration(1000)
       .attr("cy", legendHeight / 2)
@@ -961,7 +977,7 @@ export default class Pitch {
       .selectAll(".cluster-legend-text")
       .data(this.centroids)
       .join("text")
-      .attr("class", (d) => `cluster-legend-text z-10 cluster-${d.id}`)
+      .attr("class", (d) => `cluster-legend-text cluster-${d.id}`)
       .transition()
       .duration(1000)
       .text((d) => clusterCounts[d.id] + "TP")
