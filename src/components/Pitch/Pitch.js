@@ -186,7 +186,7 @@ export default class Pitch {
     /**
      * A number between 0-1. Determines the % of passes to display for the cluster vis.
      */
-    passClusterSamplePercent: 1,
+    passClusterSamplePercent: 0.5,
   };
 
   /**
