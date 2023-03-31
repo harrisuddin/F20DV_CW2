@@ -27,6 +27,10 @@
   stroke: theme(colors.neutral.900);
 }
 
+.pitch-chart .cluster-legend-text {
+  font-weight: bold;
+}
+
 .pitch-chart .pitch-right-halfspace {
   fill: theme(colors.neutral.50);
   fill-opacity: theme(opacity.75);

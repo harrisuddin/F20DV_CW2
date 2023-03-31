@@ -1,5 +1,6 @@
 import * as d3 from "d3";
 import "./BarChart.css";
+import addOrdinalSuffix from "../../ordinal";
 
 export default class BarChart {
   defaultParams = {
@@ -56,12 +57,17 @@ export default class BarChart {
     /**
      * Amount of x range to separate bars.
      */
-    xPadding: 0.1,
+    xPadding: 0.15,
+
+    /**
+     * The nth top player to start the chart from. Will then display `numberOfBars` number of players.
+     */
+    chartStartingIndex: 0,
 
     /**
      * The number of bars to display.
      */
-    numberOfBars: 5,
+    numberOfBars: 10,
 
     /**
      * The name of the selected player. Will be displayed in every chart no matter how large/little their y-axis value.
@@ -87,7 +93,29 @@ export default class BarChart {
     /**
      * The y-axis label.
      */
-    yLabel: "Through Balls / Match",
+    yLabel: "Up To 09/2020 Through Balls / Match",
+
+    /**
+     * The function to format the x axis ticks
+     * @param {String} domainValue
+     * @param {number} i
+     */
+    xAxisTickFormat: (domainValue, i) => {
+      let splitNames = domainValue.split(" ");
+
+      // if only has one name
+      if (splitNames.length === 1) return splitNames[0];
+
+      // example "Jack" -> "J."
+      let shortFirstName = splitNames[0].substring(0, 1) + ".";
+
+      // get the last name
+      // if >= 9 chars then make last name length 6 and then add ...
+      let lastName = splitNames[splitNames.length - 1];
+      if (lastName.length >= 9) lastName = lastName.substring(0, 6) + "...";
+
+      return shortFirstName + " " + lastName;
+    },
 
     /**
      * The fill colour for the bars.
@@ -194,14 +222,27 @@ export default class BarChart {
    * Set `this.xDomain` to a set with the top `numberOfBars` player names including the `selectedPlayerName`.
    */
   setXDomain() {
-    const { xMap, yMap, numberOfBars, selectedPlayerName } = this.params;
+    const { xMap, yMap, numberOfBars, selectedPlayerName, chartStartingIndex } =
+      this.params;
 
     // group sort will first sort by yMap in descending order
     // then will map the results using xMap
     // returns list of length `numberOfBars - 1`
-    const topPlayers = d3
-      .groupSort(this.filteredData, ([row]) => -yMap(row), xMap)
-      .slice(0, numberOfBars);
+    let topPlayers = d3.groupSort(
+      this.filteredData,
+      ([row]) => -yMap(row),
+      xMap
+    );
+
+    /**
+     * All the players from `this.filteredData` grouped and sorted.
+     */
+    this.allGroupSortedPlayers = topPlayers;
+
+    topPlayers = topPlayers.slice(
+      chartStartingIndex,
+      chartStartingIndex + numberOfBars
+    );
 
     // check the top players contains the selected player name
     const topPlayersHasSelectedPlayer = topPlayers.some(
@@ -250,7 +291,12 @@ export default class BarChart {
    * Set `this.xAxis`.
    */
   setXAxis() {
-    this.xAxis = d3.axisBottom(this.xScale).tickSizeOuter(0);
+    const { xAxisTickFormat } = this.params;
+
+    this.xAxis = d3
+      .axisBottom(this.xScale)
+      .tickSizeOuter(0)
+      .tickFormat(xAxisTickFormat);
   }
 
   /**
@@ -270,8 +316,17 @@ export default class BarChart {
 
     this.svg
       .select(".x-axis")
+      .transition()
+      .duration(1000)
       .attr("transform", `translate(0,${height - marginBottom})`)
       .call(this.xAxis);
+  }
+
+  addRankingPartOfLabel() {
+    const { chartStartingIndex } = this.params;
+
+    let ranking = addOrdinalSuffix(chartStartingIndex + 1);
+    return ` (Starting From ${ranking} Ranking)`;
   }
 
   /**
@@ -300,7 +355,7 @@ export default class BarChart {
       .duration(1000)
       .attr("x", -marginLeft)
       .attr("y", 10)
-      .text(yLabel);
+      .text(yLabel + this.addRankingPartOfLabel());
   }
 
   /**
@@ -330,7 +385,16 @@ export default class BarChart {
           .attr("width", this.xScale.bandwidth());
       });
 
-    const title = (i) => `${this.xValues[i]}\n${this.yValues[i]}`;
+    const title = (i) => {
+      let playerName = this.xValues[i];
+      let yValue = this.yValues[i];
+      let ranking = addOrdinalSuffix(
+        this.allGroupSortedPlayers.findIndex(
+          (playerName) => this.xValues[i] === playerName
+        ) + 1
+      );
+      return `${playerName}\n${yValue}\n${ranking} Ranking`;
+    };
     bars.html((i) => `<title>${title(i)}</title>`);
   }
 

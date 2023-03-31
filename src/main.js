@@ -96,11 +96,125 @@ function onDataLoaded() {
   }
 }
 
-d3.select("#test").on("click", () => {
+// Bar Chart Controls
+
+d3.select("#btn-bar-chart-duels-won-per-match").on("click", () => {
   barChart.setParams({
+    chartStartingIndex: 0,
     yMap: (d) =>
       Number.parseFloat(d.duels_won) / Number.parseFloat(d.appearances),
-    yLabel: "Duels Won / Match",
+    yLabel: "Up To 09/2020 Duels Won / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-thrh-balls-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.through_balls) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Through Balls / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-50-50s-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.successful_50_50s) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Successful 50/50s / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-50-50s-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.successful_50_50s) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Successful 50/50s / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-goals-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 27,
+    yMap: (d) => Number.parseFloat(d.goals) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Goals / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-big-chances-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.big_chances_created) /
+      Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Big Changes Created / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-assists-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.assists) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Assists / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-recvs-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.recoveries) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Recoveries / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-passes-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) => Number.parseFloat(d.passes) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Passes / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-acc-long-balls-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 20,
+    yMap: (d) =>
+      Number.parseFloat(d.accurate_long_balls) /
+      Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Accurate Long Balls / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-arl-btls-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 52,
+    yMap: (d) =>
+      Number.parseFloat(d.aerial_battles_won) /
+      Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Aerial Battles Won / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-intcps-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.interceptions) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 Interceptions / Match",
   });
   barChart.draw();
 });

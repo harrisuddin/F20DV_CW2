@@ -496,7 +496,8 @@ export default class DualAxisLineChart {
    * Set the svg path of the first line
    */
   setSVGPath1() {
-    const { legendHeight, colorScale } = this.params;
+    const { legendHeight, colorScale, onLegendMouseover, onLegendMouseout } =
+      this.params;
 
     console.log(this.filteredAndGroupedData);
 
@@ -504,6 +505,8 @@ export default class DualAxisLineChart {
       .selectAll(".y-axis1-line")
       .data(this.filteredAndGroupedData)
       .join("path")
+      .on("mouseover", onLegendMouseover)
+      .on("mouseleave", onLegendMouseout)
       .attr(
         "class",
         (d, i) => `playerId playerId-${d[0]} line y-axis1-line y-axis1-line${i}`

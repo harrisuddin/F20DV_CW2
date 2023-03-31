@@ -880,7 +880,7 @@ export default class Pitch {
       .duration(1000)
       .attr("cx", (d) => this.pitchXScale(d.x))
       .attr("cy", (d) => this.pitchYScale(100 - d.y))
-      .attr("fill", (d, i) => clusterColorScale[d.id])
+      .attr("fill", (d) => clusterColorScale[d.id])
       .attr("r", 8);
 
     this.svg
