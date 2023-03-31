@@ -1,0 +1,3474 @@
+[
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0078,
+    "matchId": 2499853,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0092,
+    "matchId": 2499860,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0317,
+    "matchId": 2499873,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 46
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0285,
+    "matchId": 2499898,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 24
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0026,
+    "matchId": 2499914,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 46
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0232,
+    "matchId": 2499932,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0143,
+    "matchId": 2499976,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0111,
+    "matchId": 2500081,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 76
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0018,
+    "matchId": 2500093,
+    "playerId": 101652,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0697,
+    "matchId": 2499724,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 10
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0132,
+    "matchId": 2499736,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 15
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0166,
+    "matchId": 2499744,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 76
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0065,
+    "matchId": 2499756,
+    "playerId": 134513,
+    "roleCluster": "central FW",
+    "minutesPlayed": 18
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0595,
+    "matchId": 2499784,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 18
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0005,
+    "matchId": 2499793,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 65
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0169,
+    "matchId": 2499801,
+    "playerId": 134513,
+    "roleCluster": "left MF",
+    "minutesPlayed": 46
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0118,
+    "matchId": 2499816,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 20
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0015,
+    "matchId": 2499819,
+    "playerId": 134513,
+    "roleCluster": "central FW",
+    "minutesPlayed": 28
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0052,
+    "matchId": 2499836,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 77
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0076,
+    "matchId": 2499843,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 71
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0219,
+    "matchId": 2499853,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 65
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0709,
+    "matchId": 2499860,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 65
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.02,
+    "matchId": 2499873,
+    "playerId": 134513,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0073,
+    "matchId": 2499884,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 65
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0035,
+    "matchId": 2499898,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 12
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.012,
+    "matchId": 2499903,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 71
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0006,
+    "matchId": 2499924,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 25
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.016,
+    "matchId": 2499932,
+    "playerId": 134513,
+    "roleCluster": "central FW",
+    "minutesPlayed": 77
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0784,
+    "matchId": 2499944,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 80
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0253,
+    "matchId": 2499951,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 94
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0079,
+    "matchId": 2499968,
+    "playerId": 134513,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0004,
+    "matchId": 2499976,
+    "playerId": 134513,
+    "roleCluster": "central MF",
+    "minutesPlayed": 13
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0519,
+    "matchId": 2499983,
+    "playerId": 134513,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0491,
+    "matchId": 2499996,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 64
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0095,
+    "matchId": 2500053,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 32
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0012,
+    "matchId": 2500059,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0089,
+    "matchId": 2500073,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 26
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0005,
+    "matchId": 2500081,
+    "playerId": 134513,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0019,
+    "matchId": 2499756,
+    "playerId": 21095,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0081,
+    "matchId": 2499793,
+    "playerId": 21095,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0031,
+    "matchId": 2500059,
+    "playerId": 21095,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0054,
+    "matchId": 2500081,
+    "playerId": 21095,
+    "roleCluster": "right MF",
+    "minutesPlayed": 68
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0018,
+    "matchId": 2500093,
+    "playerId": 21095,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0052,
+    "matchId": 2499724,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.03,
+    "matchId": 2499736,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0072,
+    "matchId": 2499744,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0142,
+    "matchId": 2499756,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0046,
+    "matchId": 2499764,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0071,
+    "matchId": 2499775,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0059,
+    "matchId": 2499816,
+    "playerId": 256998,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0027,
+    "matchId": 2499819,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0109,
+    "matchId": 2500014,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0055,
+    "matchId": 2500045,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0108,
+    "matchId": 2500093,
+    "playerId": 256998,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0096,
+    "matchId": 2499860,
+    "playerId": 3361,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.008,
+    "matchId": 2499968,
+    "playerId": 3361,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0078,
+    "matchId": 2499976,
+    "playerId": 3361,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0063,
+    "matchId": 2499983,
+    "playerId": 3361,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0016,
+    "matchId": 2499996,
+    "playerId": 3361,
+    "roleCluster": "central FW",
+    "minutesPlayed": 81
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0012,
+    "matchId": 2500001,
+    "playerId": 3361,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0017,
+    "matchId": 2500014,
+    "playerId": 3361,
+    "roleCluster": "central MF",
+    "minutesPlayed": 95
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0186,
+    "matchId": 2500028,
+    "playerId": 3361,
+    "roleCluster": "central FW",
+    "minutesPlayed": 92
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0602,
+    "matchId": 2500034,
+    "playerId": 3361,
+    "roleCluster": "left FW",
+    "minutesPlayed": 75
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0215,
+    "matchId": 2500045,
+    "playerId": 3361,
+    "roleCluster": "left FW",
+    "minutesPlayed": 82
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0018,
+    "matchId": 2500053,
+    "playerId": 3361,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0102,
+    "matchId": 2500073,
+    "playerId": 3361,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0048,
+    "matchId": 2500093,
+    "playerId": 3361,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0015,
+    "matchId": 2499736,
+    "playerId": 3413,
+    "roleCluster": "right CB",
+    "minutesPlayed": 5
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0037,
+    "matchId": 2499756,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 72
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0015,
+    "matchId": 2499764,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 13
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0167,
+    "matchId": 2499775,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 28
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0091,
+    "matchId": 2499784,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 13
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0122,
+    "matchId": 2499793,
+    "playerId": 3413,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0235,
+    "matchId": 2499801,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0337,
+    "matchId": 2499816,
+    "playerId": 3413,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0113,
+    "matchId": 2499819,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0006,
+    "matchId": 2499836,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 7
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0034,
+    "matchId": 2499853,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 36
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0283,
+    "matchId": 2499860,
+    "playerId": 3413,
+    "roleCluster": "right CB",
+    "minutesPlayed": 25
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0042,
+    "matchId": 2499873,
+    "playerId": 3413,
+    "roleCluster": "right CB",
+    "minutesPlayed": 82
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0037,
+    "matchId": 2499884,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 19
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0065,
+    "matchId": 2499898,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.003,
+    "matchId": 2499903,
+    "playerId": 3413,
+    "roleCluster": "right MF",
+    "minutesPlayed": 14
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0106,
+    "matchId": 2499932,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0026,
+    "matchId": 2499968,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 20
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0085,
+    "matchId": 2500028,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0015,
+    "matchId": 2500034,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 15
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0047,
+    "matchId": 2500045,
+    "playerId": 3413,
+    "roleCluster": "right MF-central MF",
+    "minutesPlayed": 94
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0077,
+    "matchId": 2500053,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 46
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0287,
+    "matchId": 2500059,
+    "playerId": 3413,
+    "roleCluster": "right CB",
+    "minutesPlayed": 72
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0015,
+    "matchId": 2500073,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 64
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0018,
+    "matchId": 2500093,
+    "playerId": 3413,
+    "roleCluster": "central MF",
+    "minutesPlayed": 13
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0023,
+    "matchId": 2499884,
+    "playerId": 397174,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0096,
+    "matchId": 2499976,
+    "playerId": 397174,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0012,
+    "matchId": 2499983,
+    "playerId": 397174,
+    "roleCluster": "left FW",
+    "minutesPlayed": 13
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0037,
+    "matchId": 2499996,
+    "playerId": 397174,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0076,
+    "matchId": 2500001,
+    "playerId": 397174,
+    "roleCluster": "central MF",
+    "minutesPlayed": 46
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0036,
+    "matchId": 2500014,
+    "playerId": 397174,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0,
+    "matchId": 2500028,
+    "playerId": 397174,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0009,
+    "matchId": 2500081,
+    "playerId": 397174,
+    "roleCluster": "central MF",
+    "minutesPlayed": 14
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0097,
+    "matchId": 2500093,
+    "playerId": 397174,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0497,
+    "matchId": 2499724,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 80
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0518,
+    "matchId": 2499736,
+    "playerId": 397178,
+    "roleCluster": "central FW-left FW",
+    "minutesPlayed": 75
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0225,
+    "matchId": 2499744,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 23
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0371,
+    "matchId": 2499756,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 72
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0102,
+    "matchId": 2499764,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 61
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0072,
+    "matchId": 2499775,
+    "playerId": 397178,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0541,
+    "matchId": 2499784,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 72
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0029,
+    "matchId": 2499801,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 44
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0108,
+    "matchId": 2499816,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 70
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0182,
+    "matchId": 2499819,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0597,
+    "matchId": 2499836,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0269,
+    "matchId": 2499843,
+    "playerId": 397178,
+    "roleCluster": "right FW",
+    "minutesPlayed": 80
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0055,
+    "matchId": 2499853,
+    "playerId": 397178,
+    "roleCluster": "central MF",
+    "minutesPlayed": 25
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0077,
+    "matchId": 2499873,
+    "playerId": 397178,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0007,
+    "matchId": 2499884,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 25
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.059,
+    "matchId": 2499898,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 78
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0062,
+    "matchId": 2499903,
+    "playerId": 397178,
+    "roleCluster": "left MF",
+    "minutesPlayed": 19
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0056,
+    "matchId": 2499914,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0068,
+    "matchId": 2499924,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 76
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0202,
+    "matchId": 2499944,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 10
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0042,
+    "matchId": 2499951,
+    "playerId": 397178,
+    "roleCluster": "right FW",
+    "minutesPlayed": 10
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0011,
+    "matchId": 2499976,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 19
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0045,
+    "matchId": 2500001,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 44
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.0251,
+    "matchId": 2500014,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 70
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0012,
+    "matchId": 2500028,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 16
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0014,
+    "matchId": 2500034,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 15
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0233,
+    "matchId": 2500059,
+    "playerId": 397178,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0015,
+    "matchId": 2500073,
+    "playerId": 397178,
+    "roleCluster": "left FW",
+    "minutesPlayed": 40
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0031,
+    "matchId": 2500081,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0169,
+    "matchId": 2500093,
+    "playerId": 397178,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0089,
+    "matchId": 2499724,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0146,
+    "matchId": 2499736,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0132,
+    "matchId": 2499744,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0024,
+    "matchId": 2499756,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0616,
+    "matchId": 2499764,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0074,
+    "matchId": 2499775,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0032,
+    "matchId": 2499784,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0031,
+    "matchId": 2499793,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0011,
+    "matchId": 2499801,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0044,
+    "matchId": 2499816,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0051,
+    "matchId": 2499819,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0034,
+    "matchId": 2499836,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0096,
+    "matchId": 2499843,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0003,
+    "matchId": 2499853,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 54
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0203,
+    "matchId": 2499860,
+    "playerId": 70122,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0043,
+    "matchId": 2499873,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0019,
+    "matchId": 2499884,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0138,
+    "matchId": 2499898,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0019,
+    "matchId": 2499903,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0131,
+    "matchId": 2499914,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0119,
+    "matchId": 2499924,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.002,
+    "matchId": 2499932,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0058,
+    "matchId": 2499944,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0059,
+    "matchId": 2499951,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0083,
+    "matchId": 2499968,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0157,
+    "matchId": 2499976,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0314,
+    "matchId": 2499983,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 77
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0173,
+    "matchId": 2499996,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0485,
+    "matchId": 2500001,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0052,
+    "matchId": 2500014,
+    "playerId": 70122,
+    "roleCluster": "central MF-left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.011,
+    "matchId": 2500034,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0015,
+    "matchId": 2500045,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0107,
+    "matchId": 2500053,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0004,
+    "matchId": 2500059,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 18
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0076,
+    "matchId": 2500073,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0172,
+    "matchId": 2500081,
+    "playerId": 70122,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0066,
+    "matchId": 2499801,
+    "playerId": 71703,
+    "roleCluster": "right CB",
+    "minutesPlayed": 67
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0131,
+    "matchId": 2499836,
+    "playerId": 71703,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0094,
+    "matchId": 2499843,
+    "playerId": 71703,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0148,
+    "matchId": 2499853,
+    "playerId": 71703,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0081,
+    "matchId": 2499860,
+    "playerId": 71703,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.003,
+    "matchId": 2499873,
+    "playerId": 71703,
+    "roleCluster": "right CB",
+    "minutesPlayed": 44
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0015,
+    "matchId": 2499903,
+    "playerId": 71703,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0119,
+    "matchId": 2499924,
+    "playerId": 71703,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0062,
+    "matchId": 2499932,
+    "playerId": 71703,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0084,
+    "matchId": 2499996,
+    "playerId": 71703,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0176,
+    "matchId": 2500001,
+    "playerId": 71703,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0066,
+    "matchId": 2500028,
+    "playerId": 71703,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0151,
+    "matchId": 2500034,
+    "playerId": 71703,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0135,
+    "matchId": 2500053,
+    "playerId": 71703,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0098,
+    "matchId": 2500073,
+    "playerId": 71703,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.0324,
+    "matchId": 2499724,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.003,
+    "matchId": 2499736,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0225,
+    "matchId": 2499744,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0324,
+    "matchId": 2499756,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0687,
+    "matchId": 2499764,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0351,
+    "matchId": 2499775,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0188,
+    "matchId": 2499784,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.017,
+    "matchId": 2499793,
+    "playerId": 7905,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0559,
+    "matchId": 2499801,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0859,
+    "matchId": 2499816,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0155,
+    "matchId": 2499819,
+    "playerId": 7905,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0272,
+    "matchId": 2499836,
+    "playerId": 7905,
+    "roleCluster": "central MF-central FW-right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.013,
+    "matchId": 2499843,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0847,
+    "matchId": 2499853,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0089,
+    "matchId": 2499860,
+    "playerId": 7905,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0088,
+    "matchId": 2499873,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0228,
+    "matchId": 2499884,
+    "playerId": 7905,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.015,
+    "matchId": 2499898,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0154,
+    "matchId": 2499903,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0055,
+    "matchId": 2499914,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0565,
+    "matchId": 2499944,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0544,
+    "matchId": 2499951,
+    "playerId": 7905,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0165,
+    "matchId": 2499968,
+    "playerId": 7905,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0095,
+    "matchId": 2499976,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 77
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.001,
+    "matchId": 2499983,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0752,
+    "matchId": 2499996,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0017,
+    "matchId": 2500001,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0713,
+    "matchId": 2500014,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0377,
+    "matchId": 2500034,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0068,
+    "matchId": 2500045,
+    "playerId": 7905,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0289,
+    "matchId": 2500053,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.011,
+    "matchId": 2500059,
+    "playerId": 7905,
+    "roleCluster": "central MF",
+    "minutesPlayed": 28
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0097,
+    "matchId": 2500073,
+    "playerId": 7905,
+    "roleCluster": "central FW",
+    "minutesPlayed": 50
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0049,
+    "matchId": 2499724,
+    "playerId": 7906,
+    "roleCluster": "right FW",
+    "minutesPlayed": 76
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0226,
+    "matchId": 2499736,
+    "playerId": 7906,
+    "roleCluster": "right FW",
+    "minutesPlayed": 75
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0238,
+    "matchId": 2499744,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 67
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0018,
+    "matchId": 2499756,
+    "playerId": 7906,
+    "roleCluster": "right FW",
+    "minutesPlayed": 18
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0171,
+    "matchId": 2499764,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 77
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0026,
+    "matchId": 2499775,
+    "playerId": 7906,
+    "roleCluster": "right FW",
+    "minutesPlayed": 62
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0044,
+    "matchId": 2499784,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 77
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0019,
+    "matchId": 2499801,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 46
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0462,
+    "matchId": 2499836,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 83
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0119,
+    "matchId": 2499843,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 62
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0261,
+    "matchId": 2499884,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0019,
+    "matchId": 2499898,
+    "playerId": 7906,
+    "roleCluster": "central MF-central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.0232,
+    "matchId": 2499903,
+    "playerId": 7906,
+    "roleCluster": "central MF-right FW",
+    "minutesPlayed": 83
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0288,
+    "matchId": 2499914,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0094,
+    "matchId": 2499924,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0001,
+    "matchId": 2499932,
+    "playerId": 7906,
+    "roleCluster": "right FW",
+    "minutesPlayed": 92
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.004,
+    "matchId": 2499944,
+    "playerId": 7906,
+    "roleCluster": "right FW",
+    "minutesPlayed": 83
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0185,
+    "matchId": 2499951,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 72
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0021,
+    "matchId": 2499968,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 27
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0177,
+    "matchId": 2499976,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 71
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0009,
+    "matchId": 2499983,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 24
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0071,
+    "matchId": 2500001,
+    "playerId": 7906,
+    "roleCluster": "right FW",
+    "minutesPlayed": 23
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.015,
+    "matchId": 2500014,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 88
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0101,
+    "matchId": 2500034,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 91
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0088,
+    "matchId": 2500053,
+    "playerId": 7906,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0056,
+    "matchId": 2500081,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0586,
+    "matchId": 2500093,
+    "playerId": 7906,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.014,
+    "matchId": 2499724,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0221,
+    "matchId": 2499736,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0154,
+    "matchId": 2499744,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.009,
+    "matchId": 2499756,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0111,
+    "matchId": 2499764,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0143,
+    "matchId": 2499775,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0191,
+    "matchId": 2499784,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0122,
+    "matchId": 2499793,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.003,
+    "matchId": 2499801,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 23
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.022,
+    "matchId": 2499816,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.004,
+    "matchId": 2499819,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 62
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0126,
+    "matchId": 2499884,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0119,
+    "matchId": 2499898,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0095,
+    "matchId": 2499903,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0151,
+    "matchId": 2499914,
+    "playerId": 7918,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0231,
+    "matchId": 2499924,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0092,
+    "matchId": 2499932,
+    "playerId": 7918,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0139,
+    "matchId": 2499944,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0193,
+    "matchId": 2499951,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0063,
+    "matchId": 2499968,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0103,
+    "matchId": 2499983,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0132,
+    "matchId": 2500028,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0153,
+    "matchId": 2500059,
+    "playerId": 7918,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0214,
+    "matchId": 2499784,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0014,
+    "matchId": 2499793,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0195,
+    "matchId": 2499801,
+    "playerId": 7922,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0098,
+    "matchId": 2499816,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0041,
+    "matchId": 2499819,
+    "playerId": 7922,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0315,
+    "matchId": 2499836,
+    "playerId": 7922,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0043,
+    "matchId": 2499843,
+    "playerId": 7922,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0127,
+    "matchId": 2499853,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0148,
+    "matchId": 2499860,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0088,
+    "matchId": 2499873,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.016,
+    "matchId": 2499884,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0171,
+    "matchId": 2499898,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0095,
+    "matchId": 2499903,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0113,
+    "matchId": 2499944,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0195,
+    "matchId": 2499951,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0165,
+    "matchId": 2499968,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0279,
+    "matchId": 2499976,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0165,
+    "matchId": 2499983,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0117,
+    "matchId": 2499996,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0315,
+    "matchId": 2500001,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0276,
+    "matchId": 2500014,
+    "playerId": 7922,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0089,
+    "matchId": 2500028,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0133,
+    "matchId": 2500034,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0204,
+    "matchId": 2500045,
+    "playerId": 7922,
+    "roleCluster": "left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0336,
+    "matchId": 2500053,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.017,
+    "matchId": 2500059,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0038,
+    "matchId": 2500073,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0101,
+    "matchId": 2500081,
+    "playerId": 7922,
+    "roleCluster": "right CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0001,
+    "matchId": 2499744,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 14
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0782,
+    "matchId": 2499764,
+    "playerId": 7934,
+    "roleCluster": "left FW",
+    "minutesPlayed": 29
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0016,
+    "matchId": 2499784,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 24
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0006,
+    "matchId": 2499793,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 27
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0052,
+    "matchId": 2499801,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0015,
+    "matchId": 2499816,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 25
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0014,
+    "matchId": 2499819,
+    "playerId": 7934,
+    "roleCluster": "left FW",
+    "minutesPlayed": 12
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0147,
+    "matchId": 2499853,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 88
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.0536,
+    "matchId": 2499860,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 75
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0157,
+    "matchId": 2499873,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 76
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0035,
+    "matchId": 2499884,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 71
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0306,
+    "matchId": 2499898,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 85
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0721,
+    "matchId": 2499903,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 76
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.0425,
+    "matchId": 2499914,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 44
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0026,
+    "matchId": 2499924,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0377,
+    "matchId": 2499932,
+    "playerId": 7934,
+    "roleCluster": "left FW",
+    "minutesPlayed": 87
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0032,
+    "matchId": 2499944,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 80
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0012,
+    "matchId": 2499951,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 80
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0102,
+    "matchId": 2499968,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 63
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0307,
+    "matchId": 2499976,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 65
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0094,
+    "matchId": 2499983,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 66
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0065,
+    "matchId": 2499996,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 26
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0092,
+    "matchId": 2500001,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0487,
+    "matchId": 2500028,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 74
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0151,
+    "matchId": 2500034,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 75
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0002,
+    "matchId": 2500045,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 85
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0047,
+    "matchId": 2500053,
+    "playerId": 7934,
+    "roleCluster": "central MF",
+    "minutesPlayed": 44
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0504,
+    "matchId": 2500059,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 62
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.001,
+    "matchId": 2500073,
+    "playerId": 7934,
+    "roleCluster": "central MF-central FW",
+    "minutesPlayed": 64
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0156,
+    "matchId": 2500081,
+    "playerId": 7934,
+    "roleCluster": "central FW",
+    "minutesPlayed": 22
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0322,
+    "matchId": 2499724,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0581,
+    "matchId": 2499736,
+    "playerId": 7936,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0014,
+    "matchId": 2499744,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0521,
+    "matchId": 2499756,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.054,
+    "matchId": 2499836,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 70
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0097,
+    "matchId": 2499843,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0016,
+    "matchId": 2499853,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0744,
+    "matchId": 2499860,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0349,
+    "matchId": 2499903,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0078,
+    "matchId": 2499914,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0029,
+    "matchId": 2499924,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0913,
+    "matchId": 2499932,
+    "playerId": 7936,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0559,
+    "matchId": 2499944,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0103,
+    "matchId": 2499951,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.005,
+    "matchId": 2499968,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 63
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0005,
+    "matchId": 2499976,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 25
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0048,
+    "matchId": 2499983,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 66
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0092,
+    "matchId": 2499996,
+    "playerId": 7936,
+    "roleCluster": "left FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0366,
+    "matchId": 2500001,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0114,
+    "matchId": 2500028,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0023,
+    "matchId": 2500034,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.1015,
+    "matchId": 2500045,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0055,
+    "matchId": 2500053,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 58
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0509,
+    "matchId": 2500059,
+    "playerId": 7936,
+    "roleCluster": "central MF-left FW",
+    "minutesPlayed": 80
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0092,
+    "matchId": 2500073,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.012,
+    "matchId": 2500081,
+    "playerId": 7936,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0001,
+    "matchId": 2499724,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0022,
+    "matchId": 2499736,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0173,
+    "matchId": 2499744,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0138,
+    "matchId": 2499756,
+    "playerId": 7938,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0084,
+    "matchId": 2499764,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0008,
+    "matchId": 2499775,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0029,
+    "matchId": 2499784,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0076,
+    "matchId": 2499793,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0043,
+    "matchId": 2499801,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0162,
+    "matchId": 2499816,
+    "playerId": 7938,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0196,
+    "matchId": 2499819,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0013,
+    "matchId": 2499836,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0043,
+    "matchId": 2499843,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0049,
+    "matchId": 2499853,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0154,
+    "matchId": 2499860,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0,
+    "matchId": 2499873,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0035,
+    "matchId": 2499884,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0008,
+    "matchId": 2499898,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 66
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0373,
+    "matchId": 2499944,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0002,
+    "matchId": 2499951,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.006,
+    "matchId": 2499968,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0007,
+    "matchId": 2499976,
+    "playerId": 7938,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0081,
+    "matchId": 2499983,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0024,
+    "matchId": 2499996,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0463,
+    "matchId": 2500001,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 67
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0133,
+    "matchId": 2500014,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0036,
+    "matchId": 2500028,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 94
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0002,
+    "matchId": 2500034,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0082,
+    "matchId": 2500045,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0022,
+    "matchId": 2500053,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0122,
+    "matchId": 2500073,
+    "playerId": 7938,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0014,
+    "matchId": 2499764,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0163,
+    "matchId": 2499775,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0533,
+    "matchId": 2499784,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0253,
+    "matchId": 2499793,
+    "playerId": 7939,
+    "roleCluster": "right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0429,
+    "matchId": 2499801,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0192,
+    "matchId": 2499816,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0139,
+    "matchId": 2499819,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 78
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0358,
+    "matchId": 2499836,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0061,
+    "matchId": 2499843,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.0202,
+    "matchId": 2499853,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0114,
+    "matchId": 2499860,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 91
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0057,
+    "matchId": 2499873,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0048,
+    "matchId": 2499898,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0067,
+    "matchId": 2499903,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0277,
+    "matchId": 2499914,
+    "playerId": 7939,
+    "roleCluster": "right MF-right FW",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0204,
+    "matchId": 2499924,
+    "playerId": 7939,
+    "roleCluster": "right MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0014,
+    "matchId": 2499951,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0225,
+    "matchId": 2499968,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0012,
+    "matchId": 2499983,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0121,
+    "matchId": 2499996,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0196,
+    "matchId": 2500001,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 67
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0064,
+    "matchId": 2500014,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0026,
+    "matchId": 2500034,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0055,
+    "matchId": 2500045,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0043,
+    "matchId": 2500053,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 75
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0367,
+    "matchId": 2500073,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0001,
+    "matchId": 2500081,
+    "playerId": 7939,
+    "roleCluster": "central MF-left CB",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0158,
+    "matchId": 2500093,
+    "playerId": 7939,
+    "roleCluster": "left MF",
+    "minutesPlayed": 60
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0064,
+    "matchId": 2499884,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 83
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0112,
+    "matchId": 2499914,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0044,
+    "matchId": 2499924,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0092,
+    "matchId": 2499932,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0192,
+    "matchId": 2499944,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0027,
+    "matchId": 2499976,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.004,
+    "matchId": 2500001,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 23
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0039,
+    "matchId": 2500028,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0066,
+    "matchId": 2500059,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0068,
+    "matchId": 2500081,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 22
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0081,
+    "matchId": 2500093,
+    "playerId": 8135,
+    "roleCluster": "left MF",
+    "minutesPlayed": 30
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0017,
+    "matchId": 2499724,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 14
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0024,
+    "matchId": 2499736,
+    "playerId": 8249,
+    "roleCluster": "right CB",
+    "minutesPlayed": 15
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0175,
+    "matchId": 2499744,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 16
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0053,
+    "matchId": 2499764,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0051,
+    "matchId": 2499775,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 2,
+    "playerankScore": 0.0295,
+    "matchId": 2499784,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0072,
+    "matchId": 2499819,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 28
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0158,
+    "matchId": 2499836,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 20
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0043,
+    "matchId": 2499843,
+    "playerId": 8249,
+    "roleCluster": "right CB",
+    "minutesPlayed": 10
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0011,
+    "matchId": 2499944,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 10
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": -0.0014,
+    "matchId": 2499951,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 18
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0023,
+    "matchId": 2500014,
+    "playerId": 8249,
+    "roleCluster": "left FW",
+    "minutesPlayed": 20
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0072,
+    "matchId": 2500059,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 90
+  },
+  {
+    "goalScored": 1,
+    "playerankScore": 0.0129,
+    "matchId": 2500073,
+    "playerId": 8249,
+    "roleCluster": "central FW",
+    "minutesPlayed": 26
+  },
+  {
+    "goalScored": 0,
+    "playerankScore": 0.0082,
+    "matchId": 2500081,
+    "playerId": 8249,
+    "roleCluster": "central MF",
+    "minutesPlayed": 68
+  }
+]

@@ -170,19 +170,6 @@ export default class Pitch {
      */
     clusterColorScale: d3.schemePaired,
 
-    // [
-    //   "#171717",
-    //   "#7f1d1d",
-    //   "#ea580c",
-    //   "#65a30d",
-    //   "#14532d",
-    //   "#0d9488",
-    //   "#164e63",
-    //   "#7c3aed",
-    //   "#581c87",
-    //   "#db2777",
-    // ],
-
     /**
      * A number between 0-1. Determines the % of passes to display for the cluster vis.
      */

@@ -1,0 +1,42 @@
+.dual-axis-line-chart {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.dual-axis-line-chart .legend .legend-text,
+.dual-axis-line-chart .legend .legend-circle {
+  @apply text-[11px] md:text-xs lg:text-sm;
+  transition: opacity 1s ease-out;
+}
+
+.dual-axis-line-chart g {
+  @apply text-[11px] md:text-xs lg:text-sm;
+}
+
+.dual-axis-line-chart .y-axis {
+  transition: opacity 1s ease-out;
+}
+
+.dual-axis-line-chart .line {
+  fill: theme(fill.none);
+  stroke-width: theme(strokeWidth[1.5]);
+  stroke-opacity: theme(opacity.100);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: opacity 1s ease-out;
+}
+
+.dual-axis-line-chart .y-axis2-line {
+  stroke-dasharray: 5;
+}
+
+.dual-axis-line-chart .y-axis1-label {
+  fill: theme(fill.current);
+  text-anchor: start;
+}
+
+.dual-axis-line-chart .y-axis2-label {
+  fill: theme(fill.current);
+  text-anchor: end;
+}

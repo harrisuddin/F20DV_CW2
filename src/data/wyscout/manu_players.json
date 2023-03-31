@@ -1,0 +1,722 @@
+[
+  {
+    "passportArea": {
+      "name": "England",
+      "id": "0",
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "weight": 72,
+    "firstName": "Marcus",
+    "middleName": "",
+    "lastName": "Rashford",
+    "currentTeamId": 1611,
+    "birthDate": "1997-10-31",
+    "height": 187,
+    "role": {
+      "code2": "FW",
+      "code3": "FWD",
+      "name": "Forward"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": "0",
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 397178,
+    "foot": "right",
+    "shortName": "M. Rashford",
+    "currentNationalTeamId": 2413
+  },
+  {
+    "passportArea": {
+      "name": "Slovakia",
+      "id": "703",
+      "alpha3code": "SVK",
+      "alpha2code": "SK"
+    },
+    "weight": 84,
+    "firstName": "Nemanja",
+    "middleName": "",
+    "lastName": "Mati\\u0107",
+    "currentTeamId": 1611,
+    "birthDate": "1988-08-01",
+    "height": 194,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "Serbia",
+      "id": "688",
+      "alpha3code": "SRB",
+      "alpha2code": "RS"
+    },
+    "wyId": 70122,
+    "foot": "left",
+    "shortName": "N. Mati\\u0107",
+    "currentNationalTeamId": 17322
+  },
+  {
+    "passportArea": {
+      "name": "Sweden",
+      "id": "752",
+      "alpha3code": "SWE",
+      "alpha2code": "SE"
+    },
+    "weight": 81,
+    "firstName": "Victor",
+    "middleName": "",
+    "lastName": "Nilsson Lindel\\u00f6f",
+    "currentTeamId": 1611,
+    "birthDate": "1994-07-17",
+    "height": 187,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "Sweden",
+      "id": "752",
+      "alpha3code": "SWE",
+      "alpha2code": "SE"
+    },
+    "wyId": 71703,
+    "foot": "right",
+    "shortName": "V. Lindel\\u00f6f",
+    "currentNationalTeamId": 7047
+  },
+  {
+    "passportArea": {
+      "name": "Congo DR",
+      "id": "180",
+      "alpha3code": "COD",
+      "alpha2code": "CD"
+    },
+    "weight": 94,
+    "firstName": "Romelu",
+    "middleName": "",
+    "lastName": "Lukaku Menama",
+    "currentTeamId": 1611,
+    "birthDate": "1993-05-13",
+    "height": 190,
+    "role": {
+      "code2": "FW",
+      "code3": "FWD",
+      "name": "Forward"
+    },
+    "birthArea": {
+      "name": "Belgium",
+      "id": "56",
+      "alpha3code": "BEL",
+      "alpha2code": "BE"
+    },
+    "wyId": 7905,
+    "foot": "left",
+    "shortName": "R. Lukaku",
+    "currentNationalTeamId": 5629
+  },
+  {
+    "passportArea": {
+      "name": "Spain",
+      "id": "724",
+      "alpha3code": "ESP",
+      "alpha2code": "ES"
+    },
+    "weight": 82,
+    "firstName": "David",
+    "middleName": "",
+    "lastName": "de Gea Quintana",
+    "currentTeamId": 1611,
+    "birthDate": "1990-11-07",
+    "height": 193,
+    "role": {
+      "code2": "GK",
+      "code3": "GKP",
+      "name": "Goalkeeper"
+    },
+    "birthArea": {
+      "name": "Spain",
+      "id": "724",
+      "alpha3code": "ESP",
+      "alpha2code": "ES"
+    },
+    "wyId": 7910,
+    "foot": "right",
+    "shortName": "David de Gea",
+    "currentNationalTeamId": 1598
+  },
+  {
+    "passportArea": {
+      "name": "England",
+      "id": "0",
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "weight": 71,
+    "firstName": "Phil",
+    "middleName": "",
+    "lastName": "Jones",
+    "currentTeamId": 1611,
+    "birthDate": "1992-02-21",
+    "height": 185,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": "0",
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 7918,
+    "foot": "right",
+    "shortName": "P. Jones",
+    "currentNationalTeamId": 2413
+  },
+  {
+    "passportArea": {
+      "name": "England",
+      "id": "0",
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "weight": 65,
+    "firstName": "Jesse",
+    "middleName": "",
+    "lastName": "Lingard",
+    "currentTeamId": 1611,
+    "birthDate": "1992-12-15",
+    "height": 174,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": "0",
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 7934,
+    "foot": "right",
+    "shortName": "J. Lingard",
+    "currentNationalTeamId": 2413
+  },
+  {
+    "passportArea": {
+      "name": "Guinea",
+      "id": "324",
+      "alpha3code": "GIN",
+      "alpha2code": "GN"
+    },
+    "weight": 84,
+    "firstName": "Paul",
+    "middleName": "",
+    "lastName": "Pogba",
+    "currentTeamId": 1611,
+    "birthDate": "1993-03-15",
+    "height": 191,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "France",
+      "id": "250",
+      "alpha3code": "FRA",
+      "alpha2code": "FR"
+    },
+    "wyId": 7936,
+    "foot": "right",
+    "shortName": "P. Pogba",
+    "currentNationalTeamId": 4418
+  },
+  {
+    "passportArea": {
+      "name": "Jamaica",
+      "id": "388",
+      "alpha3code": "JAM",
+      "alpha2code": "JM"
+    },
+    "weight": 65,
+    "firstName": "Ashley ",
+    "middleName": "",
+    "lastName": "Young",
+    "currentTeamId": 1611,
+    "birthDate": "1985-07-09",
+    "height": 175,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": "0",
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 7939,
+    "foot": "right",
+    "shortName": "A. Young",
+    "currentNationalTeamId": 2413
+  },
+  {
+    "passportArea": {
+      "name": "Morocco",
+      "id": "504",
+      "alpha3code": "MAR",
+      "alpha2code": "MA"
+    },
+    "weight": 85,
+    "firstName": "Marouane",
+    "middleName": "",
+    "lastName": "Fellaini-Bakkioui",
+    "currentTeamId": 1611,
+    "birthDate": "1987-11-22",
+    "height": 194,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "Belgium",
+      "id": "56",
+      "alpha3code": "BEL",
+      "alpha2code": "BE"
+    },
+    "wyId": 8249,
+    "foot": "right",
+    "shortName": "M. Fellaini",
+    "currentNationalTeamId": 5629
+  },
+  {
+    "passportArea": {
+      "name": "Brazil",
+      "id": 76,
+      "alpha3code": "BRA",
+      "alpha2code": "BR"
+    },
+    "weight": 64,
+    "firstName": "Frederico",
+    "middleName": "",
+    "lastName": "Rodrigues Santos",
+    "currentTeamId": 1611,
+    "birthDate": "1993-03-05",
+    "height": 169,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "Brazil",
+      "id": 76,
+      "alpha3code": "BRA",
+      "alpha2code": "BR"
+    },
+    "wyId": 40335,
+    "foot": "left",
+    "shortName": "Fred",
+    "currentNationalTeamId": 6380
+  },
+  {
+    "passportArea": {
+      "name": "Italy",
+      "id": 380,
+      "alpha3code": "ITA",
+      "alpha2code": "IT"
+    },
+    "weight": 87,
+    "firstName": "Sergio Germ\\u00e1n",
+    "middleName": "",
+    "lastName": "Romero",
+    "currentTeamId": 1611,
+    "birthDate": "1987-02-22",
+    "height": 192,
+    "role": {
+      "code2": "GK",
+      "code3": "GKP",
+      "name": "Goalkeeper"
+    },
+    "birthArea": {
+      "name": "Argentina",
+      "id": 32,
+      "alpha3code": "ARG",
+      "alpha2code": "AR"
+    },
+    "wyId": 20606,
+    "foot": "right",
+    "shortName": "S. Romero",
+    "currentNationalTeamId": 12274
+  },
+  {
+    "passportArea": {
+      "name": "Italy",
+      "id": 380,
+      "alpha3code": "ITA",
+      "alpha2code": "IT"
+    },
+    "weight": 70,
+    "firstName": "Matteo",
+    "middleName": "",
+    "lastName": "Darmian",
+    "currentTeamId": 1611,
+    "birthDate": "1989-12-02",
+    "height": 182,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "Italy",
+      "id": 380,
+      "alpha3code": "ITA",
+      "alpha2code": "IT"
+    },
+    "wyId": 21095,
+    "foot": "right",
+    "shortName": "M. Darmian",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "Ecuador",
+      "id": 218,
+      "alpha3code": "ECU",
+      "alpha2code": "EC"
+    },
+    "weight": 78,
+    "firstName": "Luis Antonio",
+    "middleName": "",
+    "lastName": "Valencia Mosquera",
+    "currentTeamId": 1611,
+    "birthDate": "1985-08-04",
+    "height": 181,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "Ecuador",
+      "id": 218,
+      "alpha3code": "ECU",
+      "alpha2code": "EC"
+    },
+    "wyId": 7938,
+    "foot": "right",
+    "shortName": "A. Valencia",
+    "currentNationalTeamId": 15797
+  },
+  {
+    "passportArea": {
+      "name": "Chile",
+      "id": 152,
+      "alpha3code": "CHL",
+      "alpha2code": "CL"
+    },
+    "weight": 62,
+    "firstName": "Alexis Alejandro",
+    "middleName": "",
+    "lastName": "S\\u00e1nchez S\\u00e1nchez",
+    "currentTeamId": 1611,
+    "birthDate": "1988-12-19",
+    "height": 169,
+    "role": {
+      "code2": "FW",
+      "code3": "FWD",
+      "name": "Forward"
+    },
+    "birthArea": {
+      "name": "Chile",
+      "id": 152,
+      "alpha3code": "CHL",
+      "alpha2code": "CL"
+    },
+    "wyId": 3361,
+    "foot": "right",
+    "shortName": "A. S\\u00e1nchez",
+    "currentNationalTeamId": 12381
+  },
+  {
+    "passportArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "weight": 83,
+    "firstName": "Lee",
+    "middleName": "",
+    "lastName": "Grant",
+    "currentTeamId": 1611,
+    "birthDate": "1983-01-27",
+    "height": 193,
+    "role": {
+      "code2": "GK",
+      "code3": "GKP",
+      "name": "Goalkeeper"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 8935,
+    "foot": "right",
+    "shortName": "L. Grant",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "Spain",
+      "id": 724,
+      "alpha3code": "ESP",
+      "alpha2code": "ES"
+    },
+    "weight": 63,
+    "firstName": "Juan Manuel",
+    "middleName": "",
+    "lastName": "Mata Garc\\u00eda",
+    "currentTeamId": 1611,
+    "birthDate": "1988-04-28",
+    "height": 170,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "Spain",
+      "id": 724,
+      "alpha3code": "ESP",
+      "alpha2code": "ES"
+    },
+    "wyId": 7906,
+    "foot": "left",
+    "shortName": "Juan Mata",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "Argentina",
+      "id": 32,
+      "alpha3code": "ARG",
+      "alpha2code": "AR"
+    },
+    "weight": 80,
+    "firstName": "Faustino Marcos Alberto",
+    "middleName": "",
+    "lastName": "Rojo",
+    "currentTeamId": 1611,
+    "birthDate": "1990-03-20",
+    "height": 187,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "Argentina",
+      "id": 32,
+      "alpha3code": "ARG",
+      "alpha2code": "AR"
+    },
+    "wyId": 101652,
+    "foot": "left",
+    "shortName": "M. Rojo",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "Spain",
+      "id": 724,
+      "alpha3code": "ESP",
+      "alpha2code": "ES"
+    },
+    "weight": 73,
+    "firstName": "Ander",
+    "middleName": "",
+    "lastName": "Herrera Ag\\u00fcera",
+    "currentTeamId": 1611,
+    "birthDate": "1989-08-14",
+    "height": 182,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "Spain",
+      "id": 724,
+      "alpha3code": "ESP",
+      "alpha2code": "ES"
+    },
+    "wyId": 3413,
+    "foot": "right",
+    "shortName": "Ander Herrera",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "weight": 81,
+    "firstName": "Chris",
+    "middleName": "",
+    "lastName": "Smalling",
+    "currentTeamId": 1611,
+    "birthDate": "1989-11-22",
+    "height": 193,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 7922,
+    "foot": "right",
+    "shortName": "C. Smalling",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "weight": 75,
+    "firstName": "Luke",
+    "middleName": "",
+    "lastName": "Shaw",
+    "currentTeamId": 1611,
+    "birthDate": "1995-07-12",
+    "height": 185,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 8135,
+    "foot": "left",
+    "shortName": "L. Shaw",
+    "currentNationalTeamId": 2413
+  },
+  {
+    "passportArea": {
+      "name": "Guadeloupe",
+      "id": 312,
+      "alpha3code": "GLP",
+      "alpha2code": "GP"
+    },
+    "weight": 76,
+    "firstName": "Anthony",
+    "middleName": "",
+    "lastName": "Martial",
+    "currentTeamId": 1611,
+    "birthDate": "1995-12-05",
+    "height": 184,
+    "role": {
+      "code2": "FW",
+      "code3": "FWD",
+      "name": "Forward"
+    },
+    "birthArea": {
+      "name": "France",
+      "id": 250,
+      "alpha3code": "FRA",
+      "alpha2code": "FR"
+    },
+    "wyId": 134513,
+    "foot": "right",
+    "shortName": "A. Martial",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "C\\u00f4te d'Ivoire",
+      "id": 384,
+      "alpha3code": "CIV",
+      "alpha2code": "CI"
+    },
+    "weight": 77,
+    "firstName": "Eric Bertrand ",
+    "middleName": "",
+    "lastName": "Bailly",
+    "currentTeamId": 1611,
+    "birthDate": "1994-04-12",
+    "height": 187,
+    "role": {
+      "code2": "DF",
+      "code3": "DEF",
+      "name": "Defender"
+    },
+    "birthArea": {
+      "name": "C\\u00f4te d'Ivoire",
+      "id": 384,
+      "alpha3code": "CIV",
+      "alpha2code": "CI"
+    },
+    "wyId": 256998,
+    "foot": "right",
+    "shortName": "E. Bailly",
+    "currentNationalTeamId": "null"
+  },
+  {
+    "passportArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "weight": 88,
+    "firstName": "Scott",
+    "middleName": "",
+    "lastName": "McTominay",
+    "currentTeamId": 1611,
+    "birthDate": "1996-12-08",
+    "height": 193,
+    "role": {
+      "code2": "MD",
+      "code3": "MID",
+      "name": "Midfielder"
+    },
+    "birthArea": {
+      "name": "England",
+      "id": 0,
+      "alpha3code": "XEN",
+      "alpha2code": ""
+    },
+    "wyId": 397174,
+    "foot": "right",
+    "shortName": "S. McTominay",
+    "currentNationalTeamId": 8664
+  }
+]

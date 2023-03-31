@@ -1,7 +1,9 @@
 import * as d3 from "d3";
 import eplPlayerStatsData from "./data/epl-player-stats.csv?url";
 import wyscoutPogbaEventsData from "./data/wyscout/pogba_events_England.json?url";
-import wyscoutMatchesData from "./data/wyscout/matches_England.json?url";
+import wyscoutManUMatchesData from "./data/wyscout/manu_matches_England.json?url";
+import wyscoutManUPlayeRankData from "./data/wyscout/manu_PlayeRank.json?url";
+import wyscoutManUPlayersData from "./data/wyscout/manu_players.json?url";
 
 /**
  * Load the EPL Player Data as CSV.
@@ -35,11 +37,16 @@ async function loadWyscoutEventsData() {
   return d3.json(wyscoutPogbaEventsData);
 }
 
-/**
- *
- */
-async function loadWyscoutMatchesData() {
-  return d3.json(wyscoutMatchesData);
+async function loadWyscoutManUMatchesData() {
+  return d3.json(wyscoutManUMatchesData);
+}
+
+async function loadWyscoutManUPlayeRankData() {
+  return d3.json(wyscoutManUPlayeRankData);
+}
+
+async function loadWyscoutManUPlayersData() {
+  return d3.json(wyscoutManUPlayersData);
 }
 
 /**
@@ -79,14 +86,34 @@ export let EPL_PLAYER_DATA;
  */
 export let WYSCOUT_POGBA_EVENTS_DATA;
 
+/**
+ * @type {Awaited<ReturnType<typeof loadWyscoutManUMatchesData>>}
+ */
+export let WYSCOUT_MANU_MATCHES_DATA;
+
+/**
+ * @type {Awaited<ReturnType<typeof loadWyscoutManUPlayeRankData>>}
+ */
+export let WYSCOUT_MANU_PLAYERANK_DATA;
+
+/**
+ * @type {Awaited<ReturnType<typeof loadWyscoutManUPlayersData>>}
+ */
+export let WYSCOUT_MANU_PLAYERS_DATA;
+
 Promise.all([
   loadEPLPlayerData(),
   loadWyscoutEventsData(),
-  // loadWyscoutMatchesData(),
+  loadWyscoutManUMatchesData(),
+  loadWyscoutManUPlayeRankData(),
+  loadWyscoutManUPlayersData(),
 ])
   .then((data) => {
     EPL_PLAYER_DATA = data[0];
     WYSCOUT_POGBA_EVENTS_DATA = data[1];
+    WYSCOUT_MANU_MATCHES_DATA = data[2];
+    WYSCOUT_MANU_PLAYERANK_DATA = data[3];
+    WYSCOUT_MANU_PLAYERS_DATA = data[4];
 
     // calls the event specified in main.js
     dataLoadedDispatch.call("dataLoaded");
