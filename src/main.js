@@ -13,13 +13,6 @@ import {
 } from "./loadData";
 import {
   WYSCOUT_ID_PLAYER_POGBA,
-  WYSCOUT_ID_PLAYER_MCTOMINAY,
-  WYSCOUT_ID_PLAYER_FRED,
-  WYSCOUT_ID_PLAYER_MATIC,
-  WYSCOUT_ID_PLAYER_FELLAINI,
-  WYSCOUT_ID_PLAYER_MATA,
-  WYSCOUT_ID_PLAYER_HERRERA,
-  WYSCOUT_ID_TEAM_MANU,
   WYSCOUT_ID_PLAYER_MANU_MIDFIELDERS,
   WYSCOUT_ID_PLAYER_MANU_ATTACKERS,
 } from "./wyscout";
@@ -202,7 +195,7 @@ d3.select("#btn-bar-chart-tackles-per-match").on("click", () => {
     chartStartingIndex: 0,
     yMap: (d) =>
       Number.parseFloat(d.tackles) / Number.parseFloat(d.appearances),
-    yLabel: "Up To 09/2020 tackles / Match",
+    yLabel: "Up To 09/2020 Tackles / Match",
   });
   barChart.draw();
 });

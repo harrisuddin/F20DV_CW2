@@ -354,7 +354,7 @@ export default class BarChart {
       .transition()
       .duration(1000)
       .attr("x", -marginLeft)
-      .attr("y", 10)
+      .attr("y", 12.5)
       .text(yLabel + this.addRankingPartOfLabel());
   }
 
