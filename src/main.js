@@ -187,34 +187,22 @@ d3.select("#btn-bar-chart-passes-per-match").on("click", () => {
   barChart.draw();
 });
 
-d3.select("#btn-bar-chart-acc-long-balls-per-match").on("click", () => {
-  barChart.setParams({
-    chartStartingIndex: 20,
-    yMap: (d) =>
-      Number.parseFloat(d.accurate_long_balls) /
-      Number.parseFloat(d.appearances),
-    yLabel: "Up To 09/2020 Accurate Long Balls / Match",
-  });
-  barChart.draw();
-});
-
-d3.select("#btn-bar-chart-arl-btls-per-match").on("click", () => {
-  barChart.setParams({
-    chartStartingIndex: 52,
-    yMap: (d) =>
-      Number.parseFloat(d.aerial_battles_won) /
-      Number.parseFloat(d.appearances),
-    yLabel: "Up To 09/2020 Aerial Battles Won / Match",
-  });
-  barChart.draw();
-});
-
 d3.select("#btn-bar-chart-intcps-per-match").on("click", () => {
   barChart.setParams({
     chartStartingIndex: 0,
     yMap: (d) =>
       Number.parseFloat(d.interceptions) / Number.parseFloat(d.appearances),
     yLabel: "Up To 09/2020 Interceptions / Match",
+  });
+  barChart.draw();
+});
+
+d3.select("#btn-bar-chart-tackles-per-match").on("click", () => {
+  barChart.setParams({
+    chartStartingIndex: 0,
+    yMap: (d) =>
+      Number.parseFloat(d.tackles) / Number.parseFloat(d.appearances),
+    yLabel: "Up To 09/2020 tackles / Match",
   });
   barChart.draw();
 });

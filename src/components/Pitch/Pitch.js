@@ -75,14 +75,14 @@ export default class Pitch {
         tag: WYSCOUT_TAGS[101],
         stroke: d3.schemeSet1[0],
         fill: d3.schemeSet1[0],
-        opacityClass: "opacity-40",
+        opacityClass: "opacity-60",
         opacityClassHighlighted: "opacity-80",
       },
       {
         tag: WYSCOUT_TAGS[1801],
         stroke: d3.schemeSet1[1],
         fill: d3.schemeSet1[1],
-        opacityClass: "opacity-40",
+        opacityClass: "opacity-60",
         opacityClassHighlighted: "opacity-80",
       },
       {

@@ -13,6 +13,10 @@
     @apply my-[0.83em] text-[1.5em] font-bold;
   }
 
+  h3 {
+    @apply my-[1em] text-[1.17em] font-bold;
+  }
+
   h1,
   h2,
   h3,
