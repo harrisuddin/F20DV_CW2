@@ -175,8 +175,6 @@ export default class DualAxisLineChart {
      * Callback function when one of the keys in the legend is no longer hovered.
      */
     onLegendMouseout: undefined,
-
-    chartEndDate: undefined,
   };
 
   /**
@@ -277,12 +275,6 @@ export default class DualAxisLineChart {
 
     let filteredData = this.data.filter((row) => xDefined(xMap(row)));
     filteredData = this.data.filter((row) => yDefined1(yMap1(row)));
-    if (chartEndDate) {
-      filteredData = filteredData.filter(
-        (row) => xMap(row) <= new Date(chartEndDate)
-      );
-      // console.log(filteredData);
-    }
 
     if (showSecondYAxis) {
       filteredData = filteredData.filter((row) => yDefined2(yMap2(row)));
